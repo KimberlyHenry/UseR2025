@@ -1,0 +1,79 @@
+/*-- scss:rules --*/
+
+/* ============================
+   Global Page Theme: Frosty Ice Boulder
+   ============================ */
+
+/* Import playful but readable Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Nunito:wght@400;700&display=swap');
+
+body {
+  font-family: "Nunito", "Segoe UI", Roboto, sans-serif;
+  background-color: #ffffff; /* Single frosty blue to avoid banding */
+  color: #1e3d59;
+  line-height: 1.6;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Headings */
+h1, h2 {
+  font-family: "Orbitron", "Nunito", sans-serif;
+  font-weight: 700;
+  color: #125d8c; /* Deep icy blue */
+  text-shadow: 0px 1px 3px rgba(123, 207, 246, 0.35); /* frosty glow */
+}
+
+h1 {
+  font-size: 2.2rem;
+  border-bottom: 4px solid #7bcff6;
+  padding-bottom: 0.3em;
+  margin-top: 0.5em;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-top: 1.5em;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin-top: 1em;
+}
+
+/* Links */
+a {
+  color: #0077b6;
+  text-decoration: none;
+}
+a:hover {
+  color: #023e8a;
+  text-decoration: underline;
+}
+
+.navbar-brand {
+  font-family: "Orbitron", sans-serif !important;
+  font-size: 1.6rem;
+  color: white !important;
+}
+
+.navbar {
+  background-color: #7bcff6 !important; /* frosty blue */
+}
+
+/* Hover effect for links */
+.navbar .nav-link:hover {
+  color: #f0f9ff !important; /* soft icy white */
+}
+
+.navbar .nav-link img {
+  filter: drop-shadow(0 0 2px rgba(255,255,255,0.6));
+  transition: transform 0.2s ease;
+}
+
+.navbar .nav-link img:hover {
+  transform: translateY(-2px);
+}
+
+

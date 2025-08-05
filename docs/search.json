@@ -1,0 +1,212 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Null Hypothesis Significance Testing via Permutation Tests",
+    "section": "",
+    "text": "This website hosts all resources for my UserR 2025 lightening talk entitled An Interactive webR Approach to Teaching Statistical Inference to Behavioral Science Students, including a hands-on tutorial activity, the presentation slide deck, and the underlying data."
+  },
+  {
+    "objectID": "index.html#navigation",
+    "href": "index.html#navigation",
+    "title": "Null Hypothesis Significance Testing via Permutation Tests",
+    "section": "Navigation",
+    "text": "Navigation\n\n🔬 Activity Tutorial\nA guided WebR tutorial where you can run code and explore permutation tests step by step.\n📊 Presentation Slides\nA Reveal.js slide deck used for the presentation.\n📂 Data File\nThe dataset used throughout the tutorial."
+  },
+  {
+    "objectID": "index.html#contact",
+    "href": "index.html#contact",
+    "title": "Null Hypothesis Significance Testing via Permutation Tests",
+    "section": "Contact",
+    "text": "Contact\nKimberly L. Henry\nProfessor, Department of Psychology and Colorado School of Public Health\nEmail: kim.henry@colostate.edu"
+  },
+  {
+    "objectID": "UseR2025_webRactivity.html#does-willingness-to-pay-differ-by-condition",
+    "href": "UseR2025_webRactivity.html#does-willingness-to-pay-differ-by-condition",
+    "title": "Null Hypothesis Significance Testing Via Permutation Tests",
+    "section": "Does willingness to pay differ by condition?",
+    "text": "Does willingness to pay differ by condition?\nThe graph below shows the average willingness to pay for the special boulder in each visualization condition, with 95% confidence intervals to reflect variability.\n\n\n\n\n\n\n\n\n\nIn this graph:\n\nEach point shows the sample mean willingness to pay for the special boulder in each visualization condition.\nError bars represent 95% confidence intervals for the group means. They provide a sense of the precision of our estimates — narrower bars indicate more precise estimates."
+  },
+  {
+    "objectID": "UseR2025_webRactivity.html#step-0-import-the-data",
+    "href": "UseR2025_webRactivity.html#step-0-import-the-data",
+    "title": "Null Hypothesis Significance Testing Via Permutation Tests",
+    "section": "Step 0: Import the data",
+    "text": "Step 0: Import the data\nPlease click Run Code on the code chunk below to import the data."
+  },
+  {
+    "objectID": "UseR2025_webRactivity.html#step-1-choose-two-conditions-to-compare",
+    "href": "UseR2025_webRactivity.html#step-1-choose-two-conditions-to-compare",
+    "title": "Null Hypothesis Significance Testing Via Permutation Tests",
+    "section": "Step 1: Choose two conditions to compare",
+    "text": "Step 1: Choose two conditions to compare\nFirst, choose two conditions to compare. The code below will assign one condition to be called Group A, and the other condition to be called Group B. By default HOPS and PI are compared, but you can change these to compare other groups.\n\nCI\nCI rescaled\nPI\nHOPS\n\nThe code also creates a dummy-coded variable to compare Group B to Group A (which we’ll use later in the activity).\nPress Run Code to create the subsetted data frame for the investigation."
+  },
+  {
+    "objectID": "UseR2025_webRactivity.html#step-2-compute-descriptive-statistics",
+    "href": "UseR2025_webRactivity.html#step-2-compute-descriptive-statistics",
+    "title": "Null Hypothesis Significance Testing Via Permutation Tests",
+    "section": "Step 2: Compute descriptive statistics",
+    "text": "Step 2: Compute descriptive statistics\n\nCompute average response for each condition\nHere we ask:\n\nWhat is the average willingness to pay for the special boulder in each of your selected conditions?\n\nPress Run Code on the code chunk below to compute the mean and standard deviation of willingness to pay for the special boulder in your selected conditions. The code also calculates the sample size of each group.\n\n\n\n\n\n\n\n\n\n\nCompute difference in average response between conditions\nHere we ask:\n\nWhat is the mean difference in willingness to pay between the two groups?\n\nPress Run Code to calculate the difference in willingness to pay between these two groups.\n\n\n\n\n\n\n\n\n\n\nMake a descriptive plot\n\nLast, let’s create a plot of the raw data. Press Run Code to visualize the distribution of willingness to pay for these two groups."
+  },
+  {
+    "objectID": "UseR2025_webRactivity.html#step-3-state-the-null-and-alternative-hypothesis",
+    "href": "UseR2025_webRactivity.html#step-3-state-the-null-and-alternative-hypothesis",
+    "title": "Null Hypothesis Significance Testing Via Permutation Tests",
+    "section": "Step 3: State the null and alternative hypothesis",
+    "text": "Step 3: State the null and alternative hypothesis\n\nNull hypothesis: \\(H_0: \\mu_{\\text{GroupA}} = \\mu_{\\text{GroupB}}\\) (the two means are equal). Or equivalently: \\(H_0: \\mu_{\\text{GroupA}} - \\mu_{\\text{GroupB}} = 0\\) (the difference in means is zero)\nAlternative hypothesis: \\(H_a: \\mu_{\\text{GroupA}} \\neq \\mu_{\\text{GroupB}}\\) (the two means are not equal). Or equivalently: \\(H_a: \\mu_{\\text{GroupA}} - \\mu_{\\text{GroupB}} \\neq 0\\) (the difference in means is not zero)"
+  },
+  {
+    "objectID": "UseR2025_webRactivity.html#step-4-mimic-the-sampling-distribution-for-the-difference-in-group-means-under-the-null-hypothesis",
+    "href": "UseR2025_webRactivity.html#step-4-mimic-the-sampling-distribution-for-the-difference-in-group-means-under-the-null-hypothesis",
+    "title": "Null Hypothesis Significance Testing Via Permutation Tests",
+    "section": "Step 4: Mimic the sampling distribution for the difference in group means under the null hypothesis",
+    "text": "Step 4: Mimic the sampling distribution for the difference in group means under the null hypothesis\n\nCreate shuffled datasets\nUsing permutations, we can approximate the sampling distribution of the difference in willingness to pay between the two groups under the null hypothesis. Press Run Code to perform 5,000 permutations, calculating the mean willingness to pay for each shuffled group in every iteration. This will take a few minutes.\n\n\n\n\n\n\n\n\n\n\nTake a peek at the raw data and first three suffled datasets\nThe graphic below shows how permutation works. The first panel displays the original data with the true group assignments, and the next three panels illustrate the first three shuffles of those assignments. Notice that after shuffling, the group labels no longer carry real meaning — any patterns that emerge are purely due to chance.\n\n\n\n\n\n\n\n\n\n\nCompute the difference in the response across all shuffled datasets\nNext, we’ll calculate the difference in mean willingness to pay between the two groups for every permutation. This value, which we’ll call null_diff, reflects the difference between the shuffled (randomized) group assignments in that permutation — not the real experimental conditions. Click Run Code to generate null_diff for all permutations\n\n\n\n\n\n\n\n\n\n\nVisualize the sampling distribution under the null\nNow, we can visualize the expected difference in willingness to pay between the two groups under the null hypothesis.\n\n\n\n\n\n\n\n\n\nEarlier, you calculated the observed difference in willingness to pay between your two selected conditions. Locate that value on the x‑axis of the null distribution and consider: How extreme is this difference compared to what we would expect if the null hypothesis were true?"
+  },
+  {
+    "objectID": "UseR2025_webRactivity.html#step-5-query-the-permutations",
+    "href": "UseR2025_webRactivity.html#step-5-query-the-permutations",
+    "title": "Null Hypothesis Significance Testing Via Permutation Tests",
+    "section": "Step 5: Query the permutations",
+    "text": "Step 5: Query the permutations\n\nTally extreme results\nOur goal is to answer:\n\nIn how many of the permuted samples is the calculated difference between groups as extreme (or more extreme) than our observed difference between groups?\n\nWhat’s the intuition?\n\nIf the null hypothesis is true, there is no real difference in average willingness to pay between the two groups.\nAny difference we see is purely due to chance.\nBy shuffling the group labels thousands of times, we create a null world where the true difference is zero.\nEach permutation shows us a difference we might expect by random chance.\n\nHow do we measure extremeness?\n\nBecause we are not predicting which group should have the higher mean, we use the absolute value of the differences.\nA permutation is considered “extreme” if its absolute difference is greater than or equal to the absolute observed difference.\n\nWhat we’ll do:\n\nMark each permutation as “extreme” if the absolute difference in means is at least as large as the observed difference.\nCount the extreme cases to determine the fraction of permutations that are as extreme or more extreme than what we observed.\n\nPress Run Code to tally the number of extreme samples.\n\n\n\n\n\n\n\n\n\n\nCompute p-value\nHere we ask:\n&gt;What proportion of the permuted differences are as extreme as our observed difference?\nFrom our tally, we can compute the fraction of permutations where the absolute difference in means is at least as large as the observed difference between the real groups.\nThis fraction is our empirical p‑value — the probability of seeing a difference this extreme if the null hypothesis were true.\nA small p‑value means that such an extreme result would be unlikely by chance alone, providing evidence against the null and suggesting a possible real difference between the groups."
+  },
+  {
+    "objectID": "UseR2025_webRactivity.html#step-6-compute-the-standard-deviation-of-the-null-distribution",
+    "href": "UseR2025_webRactivity.html#step-6-compute-the-standard-deviation-of-the-null-distribution",
+    "title": "Null Hypothesis Significance Testing Via Permutation Tests",
+    "section": "Step 6: Compute the standard deviation of the null distribution",
+    "text": "Step 6: Compute the standard deviation of the null distribution\nThe standard error (SE) reflects how much the mean difference in willingness to pay would vary by chance due to random sampling.\nIn a permutation test, we can estimate this by calculating the standard deviation of the mean differences across all 5,000 shuffled datasets. This gives us the spread of differences we’d expect under the null hypothesis, showing the typical variation if there were no real effect.\nPress Run Code to compute the standard error."
+  },
+  {
+    "objectID": "UseR2025_webRactivity.html#step-7-calculate-a-test-statistic",
+    "href": "UseR2025_webRactivity.html#step-7-calculate-a-test-statistic",
+    "title": "Null Hypothesis Significance Testing Via Permutation Tests",
+    "section": "Step 7: Calculate a test-statistic",
+    "text": "Step 7: Calculate a test-statistic\n&gt;How many standard errors away from zero is our observed difference between the two real groups?\nTo judge how unusual our observed difference is under the null hypothesis (which assumes no true difference), we calculate a standardized test statistic:\n\nTake the observed difference in willingness to pay between the two groups (\\(\\bar{x}_B - \\bar{x}_A\\)).\nSubtract the null hypothesis value (0).\nDivide by the standard error from the permutation distribution.\n\nThis standardized value tells us how many standard errors the observed difference is from the null, which is the foundation for significance testing.\nThe formula for the standardized test statistic is:\n\\[\nt = \\frac{(\\bar{x}_B - \\bar{x}_A) - 0}{SE}\n\\]\n\nCompute the standardized test statistic\nPress Run Code on the code chunk below to compute the standardized test statistic.\n\n\n\n\n\n\n\n\n\n\nVisualize the standardized text statistic alongside the sampling distribution under the null\nWe can visualize where our observed standardized test statistic falls relative to the null distribution — the distribution of standardized differences we would expect if there were truly no difference between the groups.\nThe shaded middle region represents the 95% of null test statistics that are closest to zero. If our observed statistic lands far in the tails, it’s unlikely under the null hypothesis — exactly what a p‑value quantifies.\nPress Run Code on the code chunk below to produce the graphic.\n\n\n\n\n\n\n\n\nOn this graph, the darker gray area of the sampling distribution under the null denotes the critical boundaries, marking the middle 95% of the distribution. The green line shows the calculated standardized test statistic for the difference in willingness to pay between the two conditions that you selected, measured in standard errors from the null hypothesis value (0 — i.e., no difference between groups).\n\nIf the green line falls within the darker grey area, we cannot reject the null hypothesis (we lack evidence that the group means differ).\nIf the green line is outside the darker grey boundaries, we can reject the null hypothesis (indicating a significant difference between groups). In this example, such a result would suggest that the data visualization shown to participants affects their perceived willingness to pay.\n\n\nCan the null hypothesis be rejected for the comparison of your selected conditions?"
+  },
+  {
+    "objectID": "UseR2025_webRactivity.html#step-8-test-the-hypothesis-with-an-independent-samples-t-test",
+    "href": "UseR2025_webRactivity.html#step-8-test-the-hypothesis-with-an-independent-samples-t-test",
+    "title": "Null Hypothesis Significance Testing Via Permutation Tests",
+    "section": "Step 8: Test the hypothesis with an independent samples t-test",
+    "text": "Step 8: Test the hypothesis with an independent samples t-test\nTo test whether there’s a meaningful difference in means between two groups, we have two primary approaches: a non-parametric approach (e.g., the permutation test we just worked through) and a parametric/theory-based approach.\nA two-sample t-test is a parametric approach, meaning it relies on certain assumptions about the data:\n\nNormality: The sampling distribution of the difference in means should be approximately normal. This assumption is generally met if each group’s data is roughly normal or if the sample sizes are large enough (thanks to the central limit theorem).\nEqual Variance: The variability (spread) in each group should be approximately equal.\n\nIf these assumptions are reasonable for your data, an independent samples t-test can be a powerful tool. Here’s how the t-test works:\n\nCalculate the Mean Difference: First, we calculate the difference in means between the two groups.\nEstimate the Standard Error: Using the sample standard deviations and sizes of each group, we estimate the standard error, which tells us how much we’d expect the means to vary just by chance.\nCompute the t-statistic: The t-statistic measures how many standard errors the observed difference is from zero (our null hypothesis value, assuming no difference).\n\nThe formula for the t-statistic is:\n\\[\nt = \\frac{(\\bar{x}_B - \\bar{x}_A) - 0}{SE}\n\\]\nwhere:\n\n\\(\\bar{x}_A\\) and \\(\\bar{x}_B\\) are the sample means for Groups A and B, respectively. The 0 subtracted in the numerator represents the null hypothesis value (i.e., no group difference).\n\\(SE\\) is the standard error of the difference, calculated from the sample standard deviations and sample sizes of the groups. \\(SE = \\sqrt{\\frac{s_A^2}{n_A} + \\frac{s_B^2}{n_B}}\\), where:\\(s_A\\) and \\(s_B\\) are the sample standard deviations for Groups A and B, \\(n_A\\) and \\(n_B\\) are the sample sizes for Groups A and B.\n\nPress Run Code on the code chunk below to compute the test.\n\n\n\n\n\n\n\n\nNotice the similarity between the t-statistic that we created using the permutations and the t-statistic in the t_test output (labeled statistic). Also, notice the similarity between the p-value that we created using the permutations and the p-value in the t_test output (labeled p_value).\n\n\n\n\n\n\nTip\n\n\n\nHere’s a breakdown of the code for the t_test() function in this context:\n\nwtp_final ~ group: This formula indicates that we are testing the difference in the mean values of willingness to pay between the groups defined by group.\nvar.equal = TRUE: This specifies that the variances of the two groups are assumed to be equal. If set to FALSE, the function would perform Welch’s t-test, which does not assume equal variances.\norder = c(\"B\", \"A\"): This specifies the order in which the groups are subtracted. In this case, the mean of group A is subtracted from the mean of group B.\nalternative = \"two-sided\": This specifies that the test is two-sided, meaning we are testing if there’s a significant difference in means, regardless of the direction (either group A is greater than group B or vice versa)."
+  },
+  {
+    "objectID": "UseR2025_webRactivity.html#step-9-test-the-hypothesis-with-a-simple-linear-regression",
+    "href": "UseR2025_webRactivity.html#step-9-test-the-hypothesis-with-a-simple-linear-regression",
+    "title": "Null Hypothesis Significance Testing Via Permutation Tests",
+    "section": "Step 9: Test the hypothesis with a simple linear regression",
+    "text": "Step 9: Test the hypothesis with a simple linear regression\nWe can equivalently specify the two sample t-test as a simple linear regression. Here, we regress willingness to pay on the dummy coded indicator designed to compare Group B to Group A.\n\n\n\n\n\n\n\n\nNotice that the independent sample t-test and the simple linear regression produce IDENTICAL results for the difference in willingness to pay between the two groups. A two sample t-test and a simple linear regression in which the outcome is regressed on a grouping variable are equivalent models — you obtain the same result. In the regression output, the intercept gives the estimated mean willingness to pay for Group A, and the coefficient for groupB represents the difference in means (Group B − Group A)."
+  },
+  {
+    "objectID": "UseR2025_webRactivity.html#key-takeaways",
+    "href": "UseR2025_webRactivity.html#key-takeaways",
+    "title": "Null Hypothesis Significance Testing Via Permutation Tests",
+    "section": "Key takeaways",
+    "text": "Key takeaways\n\nPermutation tests make minimal assumptions: they simply ask “what would random chance produce?”\nParametric tests (t-tests, regression) rely on normality and equal‐variance assumptions but are often faster and more familiar.\nWhen both methods agree, you can be confident in your inference; when they diverge, it’s a signal to examine your data and assumptions more closely."
+  },
+  {
+    "objectID": "UseR2025_webRactivity.html#next-steps",
+    "href": "UseR2025_webRactivity.html#next-steps",
+    "title": "Null Hypothesis Significance Testing Via Permutation Tests",
+    "section": "Next steps",
+    "text": "Next steps\n\nTry different comparisons. Repeat the analysis for other pairs of visualization types (e.g., CI vs. CI_rescaled) and compare effect sizes.\nVary the number of permutations. See how the stability of your p-value and null‐distribution estimates changes with 1,000, 10,000, or more replicates.\nExplore one‐sided tests. If you have a directional hypothesis (e.g., HOPS will increase willingness to pay), adapt your permutation counting accordingly.\n\nBy contrasting observed‐data uncertainty (confidence intervals) with null‐model variability (permutation intervals), you’ve gained a deeper intuition for how p-values and other core statistics arise — and, crucially, you’ve de-mystified some of the most confusing concepts in statistics (like p-values) by actually seeing and calculating them via simulation. You now have a flexible, assumption-lean tool in your toolkit to assess group differences — and a clear understanding of how it connects to the familiar t-test and regression frameworks. Happy analyzing!"
+  },
+  {
+    "objectID": "UseR2025_slidedeck.html#why-permutation-tests",
+    "href": "UseR2025_slidedeck.html#why-permutation-tests",
+    "title": "An Interactive webR Approach to Teaching Statistical Inference to Behavioral Science Students",
+    "section": "Why Permutation Tests?",
+    "text": "Why Permutation Tests?\n\nProblem: Students struggle with NHST’s abstract logic (p-values, sampling distributions)\nSolution: Permutation tests make inference visual and intuitive\n\n\nMost students plug and chug formulas without really grasping p‑values or sampling distributions. With permutation tests, they literally reshuffle the data, see the null world emerge, and ask, ‘How unusual is our result?’ It turns abstract inference into a hands‑on experiment."
+  },
+  {
+    "objectID": "UseR2025_slidedeck.html#exploration-via-webr",
+    "href": "UseR2025_slidedeck.html#exploration-via-webr",
+    "title": "An Interactive webR Approach to Teaching Statistical Inference to Behavioral Science Students",
+    "section": "Exploration via WebR",
+    "text": "Exploration via WebR\n\n\nI developed an interactive WebR tutorial that guides students step-by-step through the logic and implementation of permutation tests for null hypothesis significance testing."
+  },
+  {
+    "objectID": "UseR2025_slidedeck.html#the-study",
+    "href": "UseR2025_slidedeck.html#the-study",
+    "title": "An Interactive webR Approach to Teaching Statistical Inference to Behavioral Science Students",
+    "section": "The Study",
+    "text": "The Study\n\n\nThis activity uses data from Hofman et al., shared on the Open Science Framework. The study investigates how different ways of visualizing uncertainty influence decision‑making."
+  },
+  {
+    "objectID": "UseR2025_slidedeck.html#the-game",
+    "href": "UseR2025_slidedeck.html#the-game",
+    "title": "An Interactive webR Approach to Teaching Statistical Inference to Behavioral Science Students",
+    "section": "The Game",
+    "text": "The Game\n\n\nParticipants played a playful ice‑boulder game against Blorg. They could rent a ‘special boulder’ to try to slide farther and gain a competitive edge."
+  },
+  {
+    "objectID": "UseR2025_slidedeck.html#special-boulder",
+    "href": "UseR2025_slidedeck.html#special-boulder",
+    "title": "An Interactive webR Approach to Teaching Statistical Inference to Behavioral Science Students",
+    "section": "Special Boulder",
+    "text": "Special Boulder\n\n\nThe special boulder might be better - or it might not."
+  },
+  {
+    "objectID": "UseR2025_slidedeck.html#the-experimental-conditions",
+    "href": "UseR2025_slidedeck.html#the-experimental-conditions",
+    "title": "An Interactive webR Approach to Teaching Statistical Inference to Behavioral Science Students",
+    "section": "The Experimental Conditions",
+    "text": "The Experimental Conditions\n\n\\[\nH_{0}: \\mu_{\\mathrm{CI}} - \\mu_{\\mathrm{CI\\ rescaled}} = 0\n\\]\n\nTo help players decide, they were randomly shown one of four uncertainty visualizations, each showing the special boulder’s advantage over the standard one. The key difference is how the uncertainty around the group means is displayed. Today, we’re focusing on the CI versus Rescaled CI conditions to see if willingness to pay differs. The Rescaled CI shows the same data as the standard CI, but the axis is compressed, making the difference appear more dramatic. Our null hypothesis is that there’s no difference between the two groups."
+  },
+  {
+    "objectID": "UseR2025_slidedeck.html#select-observe",
+    "href": "UseR2025_slidedeck.html#select-observe",
+    "title": "An Interactive webR Approach to Teaching Statistical Inference to Behavioral Science Students",
+    "section": "1: Select & Observe",
+    "text": "1: Select & Observe\nPick two conditions & calculate observed difference\n\n\nTo begin the activity, we first pick two groups and compute the observed mean difference plus 95% CIs. This anchors students in the real effect before any shuffling happens."
+  },
+  {
+    "objectID": "UseR2025_slidedeck.html#shuffle-labels-to-test-the-null",
+    "href": "UseR2025_slidedeck.html#shuffle-labels-to-test-the-null",
+    "title": "An Interactive webR Approach to Teaching Statistical Inference to Behavioral Science Students",
+    "section": "2: Shuffle Labels to Test the Null",
+    "text": "2: Shuffle Labels to Test the Null\n\n\nNext, we randomly reassign group labels 5000 times. The first panel shows the real data; the rest show shuffled labels—letting students watch the null world form step by step.”"
+  },
+  {
+    "objectID": "UseR2025_slidedeck.html#build-the-null-distribution",
+    "href": "UseR2025_slidedeck.html#build-the-null-distribution",
+    "title": "An Interactive webR Approach to Teaching Statistical Inference to Behavioral Science Students",
+    "section": "3: Build the Null Distribution",
+    "text": "3: Build the Null Distribution\n\n\nFor each shuffle, we calculate the difference in means. Overlaying these 5000 differences gives an empirical null distribution — that is, our hands‑on sampling distribution under the null hypothesis."
+  },
+  {
+    "objectID": "UseR2025_slidedeck.html#calculate-empirical-p-value",
+    "href": "UseR2025_slidedeck.html#calculate-empirical-p-value",
+    "title": "An Interactive webR Approach to Teaching Statistical Inference to Behavioral Science Students",
+    "section": "4: Calculate Empirical p-value",
+    "text": "4: Calculate Empirical p-value\nWhat proportion of random shuffles produced effects as large as the real data?\n\n\n\n  \n\n\n\np = 0.048 (4.8% of 5000 permutations)\n\n\n\nWe simply count the proportion of shuffled differences at least as extreme as what we observed. That fraction is the p‑value — no formulas, just data in action.\nOur permutation test shows that 4.8% of 5000 random shuffles produced group differences as extreme as our observed difference (-11.75)."
+  },
+  {
+    "objectID": "UseR2025_slidedeck.html#compute-the-standard-error",
+    "href": "UseR2025_slidedeck.html#compute-the-standard-error",
+    "title": "An Interactive webR Approach to Teaching Statistical Inference to Behavioral Science Students",
+    "section": "5: Compute the Standard Error",
+    "text": "5: Compute the Standard Error\n\n\n\nStandard Error (SE) (i.e., SD of null distribution): 5.785 \n\n\n\nThe SD of our null differences is the standard error for the group difference. It shows the typical variation under the null hypothesis."
+  },
+  {
+    "objectID": "UseR2025_slidedeck.html#construct-the-test-statistic",
+    "href": "UseR2025_slidedeck.html#construct-the-test-statistic",
+    "title": "An Interactive webR Approach to Teaching Statistical Inference to Behavioral Science Students",
+    "section": "6: Construct the Test Statistic",
+    "text": "6: Construct the Test Statistic\nGroup Difference/SE = Standardized Test Statistic\n\n\nWe divide the observed difference by that SE to get a standardized test statistic. On the null density, we shade the central 95% and mark where our result falls — so students see how ‘far out’ it really is."
+  },
+  {
+    "objectID": "UseR2025_slidedeck.html#compare-to-a-parametric-approach",
+    "href": "UseR2025_slidedeck.html#compare-to-a-parametric-approach",
+    "title": "An Interactive webR Approach to Teaching Statistical Inference to Behavioral Science Students",
+    "section": "7: Compare to a Parametric Approach",
+    "text": "7: Compare to a Parametric Approach\n\nmy_groups |&gt; \n  infer::t_test(wtp_final ~ graph_type, \n         var.equal = TRUE,\n         order = c(\"CI rescaled\", \"CI\"),\n         alternative = \"two-sided\") |&gt; \n  select(estimate, statistic, p_value )\n\n\n  \n\n\n\n\nFinally, we run a classic t‑test and compare. This side‑by‑side helps students appreciate when permutation and theory agree — or why they might differ."
+  },
+  {
+    "objectID": "UseR2025_slidedeck.html#instructor-benefits",
+    "href": "UseR2025_slidedeck.html#instructor-benefits",
+    "title": "An Interactive webR Approach to Teaching Statistical Inference to Behavioral Science Students",
+    "section": "Instructor Benefits",
+    "text": "Instructor Benefits\n\nZero setup: Runs in-browser (webR)\nReusable: GitHub repo for easy adoption\nFlexible: Adaptable to other datasets\n\n🔗 Links: https://KimberlyHenry.github.io/UseR2025/\n\nwebR runs fully in the browser — no installs are needed. All code lives on GitHub, so you can drop this into any course and adapt it to new datasets in minutes."
+  }
+]

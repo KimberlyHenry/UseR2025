@@ -1,0 +1,30 @@
+---
+title: "Null Hypothesis Significance Testing via Permutation Tests"
+format:
+  html:
+    theme: yeti
+    css:
+      - https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css
+      - https://cdn.jsdelivr.net/npm/academicons@1.9.4/css/academicons.min.css
+extensions:
+  - socials
+---
+
+This website hosts all resources for my UserR 2025 lightening talk entitled **An Interactive webR Approach to Teaching Statistical Inference to Behavioral Science Students**, including a hands-on tutorial activity, the presentation slide deck, and the underlying data.
+
+## Navigation
+
+- 🔬 **[Activity Tutorial](UseR2025_webRactivity.html)**  
+  A guided WebR tutorial where you can run code and explore permutation tests step by step.
+- 📊 **[Presentation Slides](UseR2025_slidedeck.html)**  
+  A Reveal.js slide deck used for the presentation.
+- 📂 **[Data File](data/uncertainty_exp2.csv)**  
+  The dataset used throughout the tutorial.
+
+---
+
+## Contact
+
+**Kimberly L. Henry**  
+Professor, Department of Psychology and Colorado School of Public Health  
+Email: [kim.henry@colostate.edu](mailto:Kim.henry@colostate.edu)qa

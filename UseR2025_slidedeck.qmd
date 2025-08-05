@@ -1,0 +1,521 @@
+---
+title: "An Interactive webR Approach to Teaching Statistical Inference to Behavioral Science Students"
+subtitle: "Null Hypothesis Significance Testing via Permutation Tests"
+author: "Kimberly Henry"
+format: 
+  revealjs:
+    theme: moon
+    slide-number: true
+    transition: fade
+    center: true
+    scrollable: true
+df-print: paged
+execute: 
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r}
+#| message: false
+#| warning: false
+
+library(here)
+library(broom)
+library(tidyverse)
+
+df <- read_csv(here("data", "uncertainty_exp2.csv")) |> 
+  filter(effect_size == "Large effect size") |> 
+  select(graph_type, wtp_final) |> 
+  drop_na() |> 
+  mutate(graph_type = factor(graph_type, 
+                             levels = c("CI", "PI", "CI rescaled", "HOPS")))
+
+```
+
+## Why Permutation Tests?
+
+-   **Problem**: Students struggle with NHST's abstract logic (*p*-values, sampling distributions)
+-   **Solution**: Permutation tests make inference **visual** and **intuitive**
+
+::: notes
+Most students plug and chug formulas without really grasping p‑values or sampling distributions. With permutation tests, they literally reshuffle the data, see the null world emerge, and ask, ‘How unusual is our result?’ It turns abstract inference into a hands‑on experiment.
+:::
+
+## Exploration via WebR
+
+![](images/webr_screenshot.png){fig-align="center" width="1000"}
+
+::: notes
+I developed an interactive WebR tutorial that guides students step-by-step through the logic and implementation of permutation tests for null hypothesis significance testing.
+:::
+
+## The Study
+
+![](images/viz_effects_title.png){fig-align="center"}
+
+::: notes
+This activity uses data from Hofman et al., shared on the Open Science Framework. The study investigates how different ways of visualizing uncertainty influence decision‑making.
+:::
+
+## The Game
+
+![](images/blorg.png){fig-align="center" width="75%"}
+
+::: notes
+Participants played a playful ice‑boulder game against Blorg. They could rent a ‘special boulder’ to try to slide farther and gain a competitive edge.
+:::
+
+## Special Boulder
+
+![](images/special_boulder.png){fig-align="center" width="75%"}
+
+::: notes
+The special boulder might be better - or it might not.
+:::
+
+## The Experimental Conditions
+
+![](images/hulman_viz_types.png){fig-align="center" width="60%"}
+
+$$
+H_{0}: \mu_{\mathrm{CI}} - \mu_{\mathrm{CI\ rescaled}} = 0
+$$
+
+::: notes
+To help players decide, they were randomly shown one of four uncertainty visualizations, each showing the special boulder’s advantage over the standard one. The key difference is how the uncertainty around the group means is displayed. Today, we’re focusing on the CI versus Rescaled CI conditions to see if willingness to pay differs. The Rescaled CI shows the same data as the standard CI, but the axis is compressed, making the difference appear more dramatic. Our null hypothesis is that there’s no difference between the two groups.
+:::
+
+## 1: Select & Observe
+
+Pick two conditions & calculate **observed difference**
+
+```{r}
+
+# pick groups
+my_groups <-
+  df |>
+  filter(graph_type == "CI" | graph_type == "CI rescaled") 
+
+# calculate mean and 95% CI for each condition
+df_summary <- 
+  my_groups |> 
+  group_by(graph_type) |>
+  summarize(
+    mean_wtp = mean(wtp_final),
+    ci_low = mean_wtp - qt(0.975, df = n() - 1) * sd(wtp_final) / sqrt(n()),
+    ci_high = mean_wtp + qt(0.975, df = n() - 1) * sd(wtp_final) / sqrt(n())
+  )
+
+# calculate the difference for annotation
+observed_diff <- diff(df_summary$mean_wtp)
+
+x_mid <- mean(c(1, 2)) # midpoint between group 1 and 2
+y_mid <- mean(df_summary$mean_wtp) # midpoint between the means
+
+# create plot
+df_summary |> 
+  mutate(
+    group_color = case_when(
+      graph_type == "CI" ~ "#f6a27b",  
+      graph_type == "CI rescaled" ~ "#7bcff6",   
+      TRUE ~ "#999999"                  
+    )
+  ) |> 
+  ggplot(aes(x = graph_type, y = mean_wtp, color = group_color)) +
+  # Confidence intervals
+  geom_linerange(
+    aes(ymin = ci_low, ymax = ci_high),
+    linewidth = 2,
+    alpha = 0.3
+  ) +
+  # Points
+  geom_point(size = 4, shape = 16) +
+  # Difference annotation
+  geom_segment(
+    x = 1, xend = 2,
+    y = df_summary$mean_wtp[1], yend = df_summary$mean_wtp[2],
+    color = "lightgrey", linewidth = 0.5, linetype = "dotted"
+  ) +
+  geom_label(
+    x = x_mid, 
+    y = y_mid,
+    label = sprintf("Difference: %.2f", observed_diff),
+    color = "black", fill = "lightgrey", size = 5
+  ) +
+  scale_color_identity() +  
+  labs(
+    title = "How Visualization Type Affects Willingness to Pay",
+    subtitle = "Mean and 95% CI are displayed",
+    x = "Graph type viewed / Condition", 
+    y = "Willingness to pay"
+  ) +
+  theme_bw() +
+  theme(
+    plot.title       = element_text(size = 20, face = "bold"), 
+    plot.subtitle    = element_text(size = 16),                  
+    axis.title       = element_text(size = 14),                  
+    axis.text        = element_text(size = 12),                  
+    legend.text      = element_text(size = 12),                  
+    legend.title     = element_text(size = 13)
+  )
+
+```
+
+::: notes
+To begin the activity, we first pick two groups and compute the observed mean difference plus 95% CIs. This anchors students in the real effect before any shuffling happens.
+:::
+
+------------------------------------------------------------------------
+
+## 2: Shuffle Labels to Test the Null
+
+```{r}
+#| fig.width: 12
+#| fig.height: 6
+
+set.seed(123)
+
+n_permutations <- 5000
+
+# create permutation data
+permutation_list <- replicate(n_permutations, {
+  my_groups |>
+    mutate(
+      original_group = graph_type,
+      shuffled_group = sample(graph_type)
+    ) |>
+    select(wtp_final, original_group, shuffled_group)
+}, simplify = FALSE)
+
+# add observed data as permutation 0
+observed_df <- my_groups |>
+  mutate(
+    original_group = graph_type,
+    shuffled_group = graph_type,
+    permutation = 0
+  ) |>
+  select(permutation, wtp_final, original_group, shuffled_group)
+
+# combine observed + permuted
+output <- bind_rows(
+  observed_df,
+  bind_rows(permutation_list, .id = "permutation") |>
+    mutate(permutation = as.integer(permutation))
+)
+
+# select a subset (observed + 3 permutations)
+output_subset <- output |> 
+  filter(permutation %in% 0:3) 
+
+# compute group means for crossbars
+means <- output_subset |>
+  group_by(permutation, shuffled_group) |>
+  summarise(mean_wtp = mean(wtp_final), .groups = "drop")
+
+# plot
+ggplot(output_subset, aes(x = shuffled_group, y = wtp_final, color = original_group)) +
+  geom_jitter(alpha = .5, width = 0.3, height = 0) +
+  geom_crossbar(
+  data = means,
+  aes(x = shuffled_group, y = mean_wtp, ymin = mean_wtp, ymax = mean_wtp),
+  inherit.aes = FALSE,
+  width = 0.7,
+  color = "black",
+  linewidth = 1  
+) +
+  facet_wrap(nrow = 1, vars(permutation), labeller = labeller(permutation = c(
+    `0` = "Observed Data",
+    `1` = "Permutation 1",
+    `2` = "Permutation 2",
+    `3` = "Permutation 3"
+  ))) +
+  scale_color_manual(
+    values = c(
+      "CI" = "#f6a27b",
+      "CI rescaled" = "#7bcff6",
+      "PI" = "#999999",
+      "HOPS" = "#999999"
+    )
+  ) +
+  theme_bw() +
+  labs(
+    title = "Visualizing Observed and Permuted Group Assignments",
+    subtitle = "First panel shows the real data; remaining panels show shuffled labels",
+    caption = "Black horizontal bar shows group mean",
+    x = "",
+    y = "Willingness to Pay",
+    color = "Original Group"
+  ) +
+  theme(
+    plot.title       = element_text(size = 20, face = "bold"), 
+    plot.subtitle    = element_text(size = 16),                  
+    axis.title       = element_text(size = 14),                  
+    axis.text        = element_text(size = 12),                  
+    legend.text      = element_text(size = 12),                  
+    legend.title     = element_text(size = 13),
+    plot.caption     = element_text(size = 12),
+    strip.text       = element_text(size = 12),
+    legend.position  = "bottom"
+  ) 
+
+```
+
+::: notes
+Next, we randomly reassign group labels 5000 times. The first panel shows the real data; the rest show shuffled labels—letting students watch the null world form step by step.”
+:::
+
+## 3: Build the Null Distribution
+
+```{r}
+
+# turn list into a df
+df_permutations <- permutation_list |>
+  # Compute group means for each permutation
+  lapply(function(df) {
+    df |>
+      group_by(shuffled_group) |>
+      summarise(mean_under_null = mean(wtp_final), .groups = "drop")
+  }) |>
+  bind_rows(.id = "permutation")
+
+# compute mean difference in each permutation
+mean_diff_permutations <- 
+  df_permutations |>
+  pivot_wider(names_from = shuffled_group, values_from = mean_under_null) |>
+  mutate(null_diff = CI - `CI rescaled`) |>
+  select(permutation, null_diff)
+
+# calculate the 2.5th and 97.5th percentiles of the 
+# mean diff distribution under the null
+lower_bound <- 
+  mean_diff_permutations |> 
+  pull(null_diff)  |> 
+  quantile(0.025) 
+
+upper_bound <- 
+  mean_diff_permutations |> 
+  pull(null_diff) |>
+  quantile(0.975)
+
+mean_diff_permutations |> 
+  ggplot(aes(x = null_diff)) +
+  geom_histogram(fill = "#ECECEC", bins = 25) +
+  #geom_vline(xintercept = observed_diff, color = "#7bc043", lwd = 1) +
+  # Add observed mean
+  annotate("segment",
+           x = observed_diff, xend = observed_diff,
+           y = 400, yend = 1,
+           arrow = arrow(length = unit(0.2, "cm"), type = "closed"),
+           color = "#7bc043") +
+  annotate("text",
+           x = observed_diff, y = 500,  
+           label = "Observed \ndifference (-11.75)",
+           color = "#7bc043",
+           fontface = "bold",
+           vjust = 1.1) +
+  # Add null hypothesis annotation
+  annotate("segment",
+           x = 0, xend = 0,
+           y = 50, yend = 1,
+           arrow = arrow(length = unit(0.2, "cm"), type = "closed"),
+           color = "black") +
+  annotate("text",
+           x = 0, y = 150,  
+           label = "Null hypothesis asserts\nno difference between conditions",
+           color = "black",
+           fontface = "bold",
+           vjust = 1.1) +
+  theme_bw() +
+  labs(title = "Empirical Null Distribution of Condition Differences",
+       y = "Number of shuffled samples",
+       x = "Difference in willingness to pay between conditions") +
+  theme(
+    plot.title       = element_text(size = 20, face = "bold"), 
+    plot.subtitle    = element_text(size = 16),                  
+    axis.title       = element_text(size = 14),                  
+    axis.text        = element_text(size = 12)                  
+  )
+  
+  
+```
+
+::: notes
+For each shuffle, we calculate the difference in means. Overlaying these 5000 differences gives an empirical null distribution --- that is, our hands‑on sampling distribution under the null hypothesis.
+:::
+
+## 4: Calculate Empirical p-value
+
+What proportion of random shuffles produced effects as large as the real data?
+
+```{r}
+
+# tally the extreme versus not extreme permutations.
+mean_diff_permutations <- 
+  mean_diff_permutations  |> 
+  mutate(extreme_diff = case_when(abs(null_diff) >= abs(observed_diff) ~ "extreme",
+                                  TRUE ~ "not extreme")) 
+
+mean_diff_permutations |> 
+  count(extreme_diff)
+
+# count extreme permutations (where |null_diff| ≥ |observed_diff|)
+p_value <- mean(abs(mean_diff_permutations$null_diff) >= abs(observed_diff))
+
+# format for reporting
+cat(sprintf("p = %.3f (%.1f%% of %d permutations)", 
+            p_value, 
+            100*p_value, 
+            nrow(mean_diff_permutations)))
+
+```
+
+::: notes
+We simply count the proportion of shuffled differences at least as extreme as what we observed. That fraction is the p‑value --- no formulas, just data in action.
+
+Our permutation test shows that `r sprintf("%.1f%%", 100*p_value)` of `r nrow(mean_diff_permutations)` random shuffles produced group differences as extreme as our observed difference (`r sprintf("%.2f", observed_diff)`).
+:::
+
+## 5: Compute the Standard Error
+
+```{r}
+
+mean_diff_permutations |> 
+  ggplot(aes(x = null_diff)) +
+  geom_histogram(fill = "#ECECEC", bins = 25) +
+  theme_bw() +
+  labs(title = "Sampling distribution for group difference under the null hypothesis",
+       y = "Number of shuffled samples",
+       x = "Difference in willingness to pay between groups in the permutation") 
+  
+
+se <- sd(mean_diff_permutations$null_diff)
+
+cat("Standard Error (SE) (i.e., SD of null distribution):", 
+    sprintf("%.3f", se), 
+    "\n")
+
+```
+
+::: notes
+The SD of our null differences is the standard error for the group difference. It shows the typical variation under the null hypothesis.
+:::
+
+## 6: Construct the Test Statistic
+
+`Group Difference/SE = Standardized Test Statistic`
+
+```{r}
+
+# observed t-statistic
+std_test_statistic  <- observed_diff/se
+
+# null statistics
+std_mean_diff_permutations <- 
+  mean_diff_permutations |> 
+  mutate(std_null_diff = null_diff/se)
+
+# get central 95% cutoffs
+q_lower <- quantile(std_mean_diff_permutations$std_null_diff, 0.025)
+q_upper <- quantile(std_mean_diff_permutations$std_null_diff, 0.975)
+
+# build a density data frame
+dens_obj  <- density(std_mean_diff_permutations$std_null_diff)
+density_df <- data.frame(x = dens_obj$x, y = dens_obj$y)
+
+# make the plot
+ggplot(std_mean_diff_permutations, aes(x = std_null_diff)) +
+
+  # full density
+  geom_density(fill = "#ECECEC", alpha = 0.5) +
+
+  # shaded middle 95%
+  geom_area(
+    data = density_df |> filter(x >= q_lower, x <= q_upper),
+    aes(x = x, y = y),
+    fill = "#D4D4D4",
+    alpha = 0.6
+  ) +
+
+  # annotation text
+  annotate(
+    "text",
+    x = 0,
+    y = max(density_df$y) * 0.125,
+    label = paste0("If H₀ is true,\n",
+                   "≈95% of all standardized test statistics\n",
+                   "will fall in this region"),
+    family    = "sans",
+    size      = 4,
+    lineheight= 0.9,
+    hjust     = 0.5
+  ) +
+
+  # arrow to observed t
+  annotate(
+    "segment",
+    x = std_test_statistic,
+    xend = std_test_statistic,
+    y = max(density_df$y) * 0.5,
+    yend = 0,
+    arrow = arrow(length = unit(0.2, "cm"), type = "closed"),
+    color = "#7bc043"
+  ) +
+
+  # observed t label
+  annotate(
+    "text",
+    x = std_test_statistic,
+    y = max(density_df$y) * 0.6,
+    label = "Observed standardized \ntest statistic \n -11.75/5.67 = -2.07",
+    fontface = "bold",
+    family = "sans",
+    color = "#7bc043",
+    size = 4
+  ) +
+
+  labs(
+    title = "Empirical Null Distribution of Condition Differences (Standardized)",
+    x     = "Standardized null test statistic (difference between conditions/SE)",
+    y     = "Density"
+  ) +
+
+  theme_bw()
+
+```
+
+::: notes
+We divide the observed difference by that SE to get a standardized test statistic. On the null density, we shade the central 95% and mark where our result falls --- so students see how ‘far out’ it really is.
+:::
+
+------------------------------------------------------------------------
+
+## 7: Compare to a Parametric Approach
+
+```{r}
+#| echo: true
+
+my_groups |> 
+  infer::t_test(wtp_final ~ graph_type, 
+         var.equal = TRUE,
+         order = c("CI rescaled", "CI"),
+         alternative = "two-sided") |> 
+  select(estimate, statistic, p_value )
+
+```
+
+::: notes
+Finally, we run a classic t‑test and compare. This side‑by‑side helps students appreciate when permutation and theory agree --- or why they might differ.
+:::
+
+## Instructor Benefits
+
+-   **Zero setup**: Runs in-browser (webR)
+-   **Reusable**: GitHub repo for easy adoption
+-   **Flexible**: Adaptable to other datasets
+
+🔗 **Links**: [https://KimberlyHenry.github.io/UseR2025/](https://kimberlyhenry.github.io/UseR2025/){.uri}
+
+::: notes
+webR runs fully in the browser --- no installs are needed. All code lives on GitHub, so you can drop this into any course and adapt it to new datasets in minutes.
+:::

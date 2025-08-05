@@ -1,0 +1,20 @@
+# Quarto cache/freeze (safe to ignore)
+.quarto/
+_freeze/
+
+# R-specific ignores
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# Python-specific ignores
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+
+# System files
+.DS_Store
+Thumbs.db
+
+/.quarto/

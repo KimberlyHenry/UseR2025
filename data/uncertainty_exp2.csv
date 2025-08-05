@@ -1,0 +1,1831 @@
+graph_type,effect_size,wtp_final,superiority_special
+HOPS,Large effect size,50,0.75
+CI,Small effect size,0,0.9
+HOPS,Large effect size,25,0.73
+PI,Large effect size,50,0.75
+CI,Large effect size,50,1
+CI,Large effect size,50,0.75
+HOPS,Large effect size,50,0.75
+HOPS,Small effect size,25,0.62
+HOPS,Large effect size,150,0.9
+CI,Large effect size,11,0.5
+HOPS,Small effect size,50,0.65
+CI,Small effect size,0,1
+CI,Large effect size,50,1
+HOPS,Large effect size,20,0.8
+CI rescaled,Large effect size,30,1
+PI,Small effect size,100,0.7
+PI,Small effect size,100,0.95
+CI rescaled,Large effect size,50,0.7
+CI rescaled,Large effect size,50,0.9
+PI,Small effect size,200,0.75
+CI,Large effect size,200,0.8
+HOPS,Small effect size,99,0.75
+HOPS,Small effect size,50,0.65
+HOPS,Large effect size,85,0.7
+HOPS,Large effect size,100,0.75
+CI,Small effect size,249,0.99
+CI rescaled,Small effect size,50,0.85
+CI,Large effect size,50,1
+PI,Small effect size,50,0.7
+CI rescaled,Small effect size,125,0.9
+PI,Large effect size,60,0.75
+PI,Small effect size,20,0.6
+CI,Large effect size,126,0.75
+HOPS,Small effect size,100,0.5
+CI rescaled,Large effect size,30,0.75
+CI,Small effect size,50,1
+CI rescaled,Small effect size,50,0.6
+CI,Small effect size,75,0.9
+PI,Small effect size,25,0.52
+PI,Large effect size,20,0.58
+HOPS,Small effect size,10,0.6
+HOPS,Small effect size,25,0.55
+HOPS,Large effect size,50,0.75
+CI rescaled,Large effect size,25,0.95
+PI,Small effect size,50,0.6
+HOPS,Small effect size,50,0.54
+HOPS,Large effect size,25,0.9
+CI,Large effect size,40,0.95
+CI,Large effect size,40,0.65
+CI rescaled,Small effect size,100,0.7
+CI,Large effect size,200,1
+PI,Large effect size,50,0.9
+CI rescaled,Large effect size,33,0.6
+HOPS,Large effect size,50,0.75
+CI rescaled,Large effect size,50,1
+CI rescaled,Small effect size,71,0.6
+PI,Large effect size,78,0.7
+PI,Large effect size,75,0.7
+CI rescaled,Large effect size,81,1
+CI rescaled,Small effect size,100,0.9
+PI,Large effect size,62,0.75
+CI,Large effect size,125,0.99
+HOPS,Large effect size,25,0.98
+CI,Large effect size,50,1
+CI,Small effect size,124,0.79
+PI,Large effect size,100,0.8
+CI rescaled,Small effect size,100,1
+CI,Small effect size,200,0.95
+HOPS,Small effect size,21,0.65
+HOPS,Small effect size,25,0.6
+CI rescaled,Large effect size,20,1
+PI,Large effect size,25,0.7
+HOPS,Small effect size,10,0.52
+CI,Large effect size,123,0.8
+PI,Large effect size,50,0.75
+CI,Large effect size,25,1
+CI rescaled,Large effect size,183,0.6
+CI,Small effect size,75,0.9
+CI,Small effect size,100,0.99
+HOPS,Small effect size,0,0.5
+CI,Large effect size,100,0.75
+CI,Large effect size,125,0.85
+PI,Large effect size,125,0.8
+HOPS,Small effect size,100,0.85
+CI rescaled,Small effect size,100,0.95
+HOPS,Large effect size,75,0.8
+HOPS,Small effect size,200,1
+CI rescaled,Small effect size,50,0.9
+PI,Small effect size,10,0.65
+HOPS,Small effect size,50,0.8
+CI rescaled,Large effect size,125,1
+PI,Large effect size,50,0.68
+PI,Small effect size,10,0.52
+PI,Large effect size,25,0.66
+HOPS,Large effect size,0,0.6
+PI,Large effect size,246,1
+CI rescaled,Small effect size,75,1
+HOPS,Large effect size,60,0.75
+PI,Large effect size,50,0.6
+CI,Large effect size,100,0.9
+PI,Large effect size,249,0.66
+CI rescaled,Small effect size,41,0.7
+CI rescaled,Small effect size,0,1
+PI,Large effect size,25,0.7
+HOPS,Small effect size,0,0.55
+CI rescaled,Large effect size,0,0.95
+PI,Small effect size,100,0.8
+HOPS,Large effect size,125,0.8
+CI,Small effect size,0,0.95
+CI rescaled,Small effect size,0,0.75
+HOPS,Large effect size,50,0.65
+PI,Small effect size,10,0.52
+CI rescaled,Large effect size,105,0.9
+CI rescaled,Small effect size,50,0.95
+HOPS,Small effect size,98,0.51
+PI,Large effect size,125,0.75
+CI rescaled,Large effect size,50,0.9
+HOPS,Small effect size,10,0.59
+CI,Large effect size,75,0.95
+CI,Small effect size,200,1
+CI rescaled,Small effect size,75,0.7
+PI,Large effect size,50,0.7
+CI,Small effect size,164,0.6
+HOPS,Large effect size,50,0.65
+HOPS,Small effect size,99,0.9
+CI,Large effect size,30,1
+CI,Small effect size,175,0.98
+PI,Large effect size,150,0.85
+PI,Small effect size,65,0.71
+CI,Large effect size,75,0.8
+CI,Small effect size,175,0.99
+CI rescaled,Small effect size,248,1
+HOPS,Small effect size,50,0.55
+HOPS,Large effect size,50,0.7
+CI rescaled,Small effect size,0,1
+CI,Large effect size,0,1
+HOPS,Large effect size,25,0.5
+PI,Small effect size,50,0.75
+PI,Large effect size,171,0.7
+CI,Small effect size,116,0.5
+PI,Small effect size,25,0.6
+HOPS,Large effect size,53,0.7
+CI,Large effect size,50,0.9
+PI,Large effect size,49,0.7
+CI rescaled,Small effect size,50,0.75
+HOPS,Large effect size,50,0.7
+CI,Small effect size,200,0.97
+PI,Small effect size,5,0.9
+CI,Large effect size,225,0.95
+CI rescaled,Large effect size,50,0.95
+CI,Small effect size,100,0.95
+HOPS,Small effect size,50,0.75
+CI rescaled,Large effect size,69,0.9
+HOPS,Large effect size,50,0.75
+HOPS,Small effect size,0,0.55
+HOPS,Small effect size,75,0.75
+PI,Small effect size,0,0.52
+CI rescaled,Large effect size,0,0.9
+PI,Large effect size,50,0.65
+HOPS,Large effect size,25,0.7
+PI,Large effect size,150,0.75
+HOPS,Small effect size,25,0.6
+CI,Large effect size,50,0.99
+CI rescaled,Large effect size,25,0.5
+CI rescaled,Small effect size,50,1
+PI,Large effect size,150,0.8
+HOPS,Large effect size,80,0.75
+HOPS,Small effect size,75,0.55
+PI,Large effect size,0,0.75
+PI,Small effect size,20,0.6
+HOPS,Small effect size,50,0.6
+PI,Large effect size,50,0.8
+PI,Large effect size,73,0.8
+CI rescaled,Large effect size,20,0.95
+CI,Large effect size,15,0.55
+HOPS,Small effect size,50,0.55
+PI,Small effect size,2,0.53
+PI,Large effect size,55,0.75
+CI,Large effect size,75,0.9
+HOPS,Small effect size,50,0.54
+CI rescaled,Large effect size,100,0.97
+PI,Small effect size,50,0.75
+PI,Small effect size,50,0.6
+HOPS,Large effect size,10,0.5
+PI,Large effect size,77,0.85
+HOPS,Large effect size,128,0.5
+HOPS,Large effect size,70,0.7
+CI rescaled,Large effect size,100,1
+PI,Large effect size,50,0.8
+CI,Small effect size,120,0.75
+CI,Large effect size,247,0.95
+HOPS,Small effect size,40,0.6
+PI,Large effect size,74,0.65
+PI,Small effect size,10,0.54
+CI,Small effect size,150,0.85
+HOPS,Large effect size,25,0.75
+CI rescaled,Small effect size,150,0.96
+CI,Small effect size,50,0.7
+CI,Large effect size,75,1
+PI,Small effect size,20,0.55
+CI,Small effect size,25,0.75
+CI,Large effect size,0,0.9
+HOPS,Large effect size,0,0.9
+HOPS,Small effect size,123,0.7
+CI rescaled,Small effect size,0,0.99
+HOPS,Small effect size,20,0.5
+CI,Small effect size,150,0.99
+CI rescaled,Small effect size,0,0.95
+PI,Small effect size,20,0.75
+CI,Large effect size,70,0.85
+HOPS,Large effect size,100,0.9
+HOPS,Large effect size,0,0.6
+PI,Small effect size,5,0.55
+HOPS,Small effect size,0,0.55
+CI rescaled,Large effect size,20,1
+HOPS,Large effect size,42,0.6
+PI,Large effect size,50,0.75
+CI,Small effect size,100,0.95
+CI,Large effect size,50,0.95
+HOPS,Small effect size,97,0.8
+CI,Small effect size,34,1
+CI rescaled,Small effect size,50,0.55
+HOPS,Small effect size,200,0.75
+PI,Small effect size,20,0.6
+HOPS,Small effect size,55,0.85
+CI rescaled,Large effect size,25,0.95
+CI,Large effect size,125,1
+CI rescaled,Large effect size,31,0.8
+PI,Large effect size,50,0.75
+HOPS,Large effect size,60,0.75
+HOPS,Small effect size,51,0.75
+CI,Small effect size,199,0.95
+PI,Small effect size,0,0.7
+CI,Small effect size,50,0.6
+CI rescaled,Large effect size,50,0.75
+HOPS,Large effect size,50,0.85
+CI,Small effect size,100,0.95
+CI rescaled,Small effect size,25,0.8
+CI,Large effect size,50,0.9
+CI,Large effect size,100,1
+CI rescaled,Large effect size,125,0.95
+CI,Small effect size,200,0.9
+HOPS,Large effect size,40,0.76
+HOPS,Small effect size,0,0.6
+CI,Small effect size,80,0.75
+CI,Large effect size,200,1
+CI rescaled,Small effect size,50,0.8
+HOPS,Large effect size,50,0.75
+HOPS,Small effect size,25,0.54
+CI rescaled,Large effect size,150,0.99
+HOPS,Small effect size,25,0.55
+CI,Small effect size,249,0.95
+CI rescaled,Small effect size,156,0.75
+PI,Small effect size,50,0.7
+CI,Small effect size,150,0.95
+CI rescaled,Small effect size,237,0.95
+CI,Small effect size,100,0.95
+PI,Large effect size,150,0.8
+CI,Small effect size,15,1
+CI rescaled,Small effect size,50,0.8
+PI,Small effect size,10,0.55
+CI rescaled,Large effect size,100,1
+PI,Large effect size,100,0.6
+HOPS,Large effect size,100,0.75
+PI,Large effect size,191,0.7
+HOPS,Large effect size,50,0.7
+HOPS,Large effect size,100,0.8
+CI,Large effect size,100,0.9
+CI,Large effect size,75,0.95
+PI,Large effect size,50,0.75
+CI rescaled,Small effect size,50,1
+CI rescaled,Large effect size,50,0.98
+CI rescaled,Large effect size,50,1
+PI,Small effect size,34,0.75
+HOPS,Small effect size,51,0.7
+PI,Large effect size,126,1
+HOPS,Large effect size,49,0.8
+CI rescaled,Small effect size,120,0.99
+CI,Small effect size,100,1
+HOPS,Small effect size,100,0.8
+PI,Small effect size,10,0.54
+PI,Small effect size,10,0.55
+CI rescaled,Large effect size,40,1
+PI,Large effect size,25,0.95
+CI rescaled,Small effect size,50,0.75
+CI,Small effect size,100,0.95
+CI rescaled,Small effect size,24,0.7
+CI rescaled,Small effect size,50,0.6
+CI,Small effect size,50,0.9
+CI,Small effect size,30,1
+CI,Large effect size,120,1
+CI,Large effect size,75,0.7
+CI rescaled,Small effect size,120,1
+PI,Large effect size,50,0.6
+CI rescaled,Small effect size,124,0.97
+HOPS,Large effect size,50,0.85
+PI,Large effect size,10,0.75
+CI,Small effect size,130,0.75
+CI,Small effect size,248,0.95
+PI,Small effect size,25,0.52
+CI rescaled,Large effect size,100,0.95
+CI rescaled,Small effect size,50,0.75
+HOPS,Large effect size,50,0.65
+HOPS,Small effect size,76,0.6
+HOPS,Large effect size,125,1
+HOPS,Small effect size,60,0.7
+CI,Large effect size,150,1
+CI rescaled,Small effect size,25,1
+CI,Large effect size,150,0.99
+CI,Large effect size,100,0.95
+PI,Large effect size,100,0.8
+CI,Small effect size,100,0.5
+CI rescaled,Small effect size,20,0.85
+PI,Large effect size,100,0.65
+HOPS,Large effect size,151,0.85
+HOPS,Large effect size,50,0.75
+PI,Small effect size,5,0.51
+CI rescaled,Large effect size,20,1
+CI rescaled,Small effect size,100,0.98
+CI rescaled,Small effect size,5,0.7
+CI,Small effect size,0,0.95
+CI rescaled,Large effect size,150,0.95
+CI rescaled,Small effect size,100,0.55
+PI,Small effect size,25,0.65
+PI,Small effect size,50,0.85
+CI,Small effect size,249,1
+CI rescaled,Small effect size,125,1
+CI rescaled,Large effect size,50,1
+CI,Large effect size,81,0.95
+PI,Large effect size,100,0.75
+CI rescaled,Small effect size,30,0.7
+PI,Small effect size,25,0.6
+CI rescaled,Small effect size,50,0.95
+CI,Large effect size,30,0.9
+HOPS,Large effect size,15,0.8
+PI,Large effect size,0,1
+HOPS,Small effect size,20,0.54
+CI rescaled,Large effect size,200,0.98
+PI,Small effect size,0,0.6
+PI,Small effect size,147,0.5
+CI,Small effect size,10,0.75
+CI rescaled,Large effect size,50,0.9
+CI,Large effect size,200,0.95
+HOPS,Large effect size,50,0.9
+PI,Small effect size,100,0.6
+HOPS,Large effect size,50,0.6
+PI,Small effect size,10,0.6
+CI rescaled,Small effect size,40,0.6
+HOPS,Small effect size,50,0.65
+PI,Large effect size,50,0.75
+CI,Large effect size,70,0.8
+CI rescaled,Large effect size,50,1
+CI,Large effect size,10,0.52
+PI,Large effect size,50,0.75
+CI rescaled,Large effect size,50,0.9
+HOPS,Large effect size,0,0.75
+CI rescaled,Small effect size,105,0.8
+PI,Large effect size,100,0.6
+PI,Large effect size,60,0.65
+CI rescaled,Large effect size,1,1
+CI rescaled,Small effect size,20,0.75
+HOPS,Large effect size,125,0.7
+CI,Large effect size,125,0.95
+CI rescaled,Small effect size,100,0.9
+CI,Small effect size,25,0.75
+PI,Large effect size,84,0.8
+CI rescaled,Large effect size,50,0.9
+CI,Small effect size,220,0.99
+HOPS,Small effect size,70,0.6
+CI,Large effect size,175,1
+PI,Large effect size,50,0.6
+PI,Small effect size,89,0.9
+PI,Small effect size,0,0.5
+PI,Large effect size,50,0.75
+CI,Large effect size,0,0.9
+CI,Large effect size,180,0.95
+CI,Large effect size,40,0.65
+HOPS,Small effect size,50,0.65
+CI rescaled,Small effect size,150,0.95
+CI,Large effect size,25,0.6
+CI rescaled,Small effect size,100,0.95
+CI rescaled,Small effect size,50,0.9
+PI,Large effect size,50,0.75
+PI,Large effect size,40,0.58
+CI,Small effect size,75,0.9
+CI rescaled,Small effect size,5,0.6
+HOPS,Small effect size,15,0.6
+CI rescaled,Small effect size,134,0.5
+CI rescaled,Small effect size,65,0.97
+PI,Large effect size,51,0.75
+CI,Small effect size,100,0.75
+CI rescaled,Small effect size,20,0.75
+PI,Large effect size,57,1
+HOPS,Large effect size,150,0.6
+PI,Small effect size,12,0.55
+CI rescaled,Small effect size,0,1
+CI,Large effect size,150,0.95
+CI rescaled,Small effect size,134,0.95
+CI,Small effect size,50,0.8
+HOPS,Large effect size,65,0.65
+CI,Large effect size,50,0.8
+PI,Small effect size,50,0.75
+PI,Small effect size,50,1
+PI,Small effect size,20,0.55
+CI rescaled,Large effect size,249,1
+PI,Large effect size,75,0.7
+CI,Large effect size,100,0.95
+HOPS,Large effect size,20,0.85
+HOPS,Small effect size,0,0.6
+CI rescaled,Small effect size,150,0.95
+CI rescaled,Large effect size,100,0.99
+PI,Large effect size,100,0.67
+CI rescaled,Small effect size,150,0.97
+CI rescaled,Small effect size,10,0.75
+CI rescaled,Small effect size,130,0.4
+CI,Large effect size,119,0.99
+PI,Large effect size,25,0.7
+HOPS,Large effect size,50,0.75
+PI,Large effect size,25,0.75
+CI,Large effect size,125,1
+CI rescaled,Large effect size,124,0.99
+CI rescaled,Large effect size,102,1
+CI,Small effect size,75,0.95
+HOPS,Large effect size,50,0.8
+CI rescaled,Large effect size,0,0.95
+CI,Large effect size,42,0.25
+PI,Large effect size,43,0.61
+HOPS,Large effect size,44,1
+PI,Large effect size,20,0.58
+PI,Small effect size,50,0.8
+HOPS,Small effect size,60,0.7
+HOPS,Small effect size,10,0.6
+CI,Small effect size,112,1
+CI,Small effect size,50,1
+PI,Small effect size,100,0.75
+CI,Small effect size,50,0.95
+CI,Small effect size,100,0.75
+PI,Small effect size,100,1
+CI rescaled,Small effect size,90,0.85
+CI rescaled,Small effect size,75,0.75
+PI,Large effect size,10,1
+CI,Small effect size,225,0.95
+CI,Large effect size,50,0.8
+HOPS,Small effect size,124,0.55
+CI,Large effect size,150,0.95
+PI,Small effect size,35,0.55
+PI,Small effect size,35,0.65
+CI,Large effect size,50,0.7
+CI,Small effect size,50,0.9
+CI,Large effect size,10,0.95
+CI rescaled,Small effect size,50,0.53
+PI,Small effect size,0,0.75
+CI rescaled,Small effect size,50,0.99
+CI,Large effect size,80,0.6
+CI rescaled,Large effect size,240,1
+CI rescaled,Large effect size,58,0.95
+PI,Small effect size,50,0.7
+HOPS,Small effect size,50,0.65
+PI,Small effect size,0,0.55
+PI,Large effect size,100,0.7
+PI,Small effect size,50,0.6
+CI,Large effect size,149,0.95
+PI,Small effect size,40,0.59
+CI,Small effect size,50,0.8
+CI rescaled,Small effect size,20,0.8
+PI,Small effect size,0,0.51
+PI,Small effect size,51,0.75
+HOPS,Large effect size,50,0.75
+PI,Large effect size,51,0.6
+PI,Small effect size,50,0.7
+CI,Small effect size,100,0.95
+CI rescaled,Large effect size,50,0.9
+PI,Large effect size,50,0.75
+HOPS,Small effect size,0,1
+CI,Small effect size,50,0.9
+CI rescaled,Small effect size,50,0.75
+PI,Large effect size,50,0.8
+CI rescaled,Large effect size,0,0.75
+HOPS,Small effect size,50,0.75
+CI,Large effect size,144,0.8
+HOPS,Small effect size,35,0.65
+PI,Large effect size,90,1
+PI,Large effect size,100,0.58
+CI,Small effect size,65,0.52
+CI,Large effect size,50,0.99
+HOPS,Large effect size,150,0.75
+CI,Large effect size,111,1
+CI,Small effect size,125,1
+CI,Small effect size,50,0.6
+CI,Large effect size,240,1
+CI rescaled,Large effect size,29,0.65
+PI,Small effect size,50,0.52
+PI,Large effect size,0,0.8
+PI,Large effect size,125,0.75
+HOPS,Large effect size,75,0.9
+CI rescaled,Small effect size,0,1
+CI,Large effect size,100,0.9
+CI rescaled,Large effect size,150,0.95
+CI,Small effect size,125,0.9
+HOPS,Small effect size,100,1
+PI,Large effect size,164,0.8
+CI,Small effect size,50,0.9
+CI rescaled,Small effect size,50,0.75
+CI rescaled,Large effect size,100,0.75
+HOPS,Large effect size,30,0.7
+PI,Large effect size,50,0.75
+PI,Small effect size,20,0.75
+CI rescaled,Large effect size,50,0.95
+HOPS,Small effect size,125,0.75
+HOPS,Large effect size,125,1
+PI,Large effect size,60,0.75
+HOPS,Small effect size,100,0.53
+CI,Large effect size,50,0.8
+CI rescaled,Small effect size,50,0.95
+CI,Small effect size,101,0.95
+CI,Small effect size,85,0.95
+PI,Large effect size,100,0.8
+HOPS,Large effect size,50,0.75
+HOPS,Large effect size,50,0.7
+HOPS,Large effect size,25,0.75
+CI rescaled,Large effect size,49,0.6
+CI,Large effect size,125,1
+HOPS,Large effect size,50,0.8
+CI rescaled,Small effect size,30,0.95
+CI rescaled,Large effect size,125,0.95
+PI,Small effect size,50,0.65
+PI,Small effect size,75,0.65
+HOPS,Small effect size,50,0.75
+HOPS,Large effect size,25,0.65
+PI,Large effect size,50,0.7
+HOPS,Large effect size,50,0.8
+PI,Large effect size,10,0.75
+CI rescaled,Small effect size,100,0.85
+CI rescaled,Small effect size,100,0.9
+CI,Large effect size,100,0.95
+PI,Small effect size,125,0.6
+HOPS,Large effect size,125,0.8
+CI rescaled,Large effect size,50,0.75
+HOPS,Large effect size,50,0.8
+PI,Small effect size,50,0.5
+CI rescaled,Small effect size,25,0.9
+CI,Small effect size,100,1
+CI,Large effect size,100,0.95
+PI,Small effect size,200,0.7
+CI,Small effect size,151,0.95
+CI,Large effect size,50,0.75
+CI rescaled,Large effect size,53,0.5
+CI,Small effect size,0,0.95
+CI,Large effect size,80,0.95
+CI rescaled,Small effect size,50,0.85
+HOPS,Small effect size,3,0.75
+HOPS,Large effect size,15,0.75
+HOPS,Large effect size,50,0.6
+CI,Large effect size,46,0.95
+CI rescaled,Small effect size,47,0.65
+CI rescaled,Small effect size,50,0.9
+CI,Small effect size,65,0.85
+HOPS,Small effect size,20,0.55
+CI,Large effect size,125,0.75
+CI,Large effect size,50,1
+HOPS,Small effect size,75,0.75
+PI,Small effect size,20,0.55
+CI rescaled,Small effect size,0,0.95
+HOPS,Large effect size,0,0.58
+PI,Small effect size,50,0.7
+CI rescaled,Small effect size,34,0.6
+CI rescaled,Large effect size,75,0.9
+CI,Large effect size,0,0.99
+HOPS,Large effect size,50,0.75
+HOPS,Large effect size,25,0.75
+CI,Small effect size,10,0.75
+HOPS,Small effect size,32,0.6
+PI,Large effect size,125,0.7
+HOPS,Large effect size,50,0.75
+HOPS,Large effect size,0,0.6
+PI,Large effect size,75,0.65
+CI,Large effect size,143,0.45
+PI,Small effect size,10,0.54
+HOPS,Small effect size,50,0.75
+PI,Small effect size,75,0.55
+CI rescaled,Small effect size,0,0.7
+HOPS,Small effect size,80,0.54
+CI,Small effect size,50,0.95
+CI rescaled,Large effect size,50,0.8
+CI,Large effect size,51,0.99
+PI,Small effect size,75,0.8
+PI,Small effect size,75,0.7
+CI rescaled,Large effect size,30,0.85
+CI,Large effect size,130,0.75
+PI,Small effect size,49,0.7
+CI,Small effect size,150,0.98
+PI,Small effect size,5,0.65
+CI rescaled,Small effect size,70,1
+HOPS,Small effect size,1,0.52
+CI rescaled,Small effect size,25,0.9
+PI,Large effect size,50,0.8
+HOPS,Large effect size,100,0.8
+CI rescaled,Large effect size,100,1
+CI rescaled,Small effect size,0,0.75
+PI,Small effect size,25,0.6
+CI rescaled,Small effect size,98,1
+CI rescaled,Small effect size,51,0.8
+CI rescaled,Large effect size,50,0.95
+HOPS,Small effect size,40,0.55
+CI,Small effect size,150,0.95
+CI rescaled,Large effect size,150,0.99
+CI,Small effect size,0,0.95
+CI,Small effect size,30,1
+PI,Small effect size,118,1
+PI,Small effect size,150,1
+PI,Small effect size,10,0.5
+CI,Small effect size,110,0.65
+HOPS,Large effect size,52,0.6
+HOPS,Large effect size,0,0.75
+CI,Large effect size,55,0.99
+CI,Large effect size,65,0.99
+PI,Small effect size,2,0.54
+HOPS,Large effect size,50,0.75
+PI,Small effect size,50,0.65
+CI rescaled,Large effect size,76,0.5
+CI,Large effect size,100,0.51
+CI rescaled,Small effect size,100,0.9
+HOPS,Small effect size,100,0.54
+CI rescaled,Small effect size,101,0.6
+PI,Small effect size,25,0.52
+HOPS,Large effect size,100,0.65
+PI,Large effect size,0,0.75
+PI,Large effect size,25,0.85
+CI rescaled,Large effect size,0,1
+CI rescaled,Large effect size,50,1
+PI,Small effect size,50,0.95
+CI,Large effect size,249,1
+PI,Small effect size,15,0.55
+PI,Large effect size,152,0.8
+HOPS,Large effect size,120,1
+PI,Small effect size,0,0.65
+PI,Small effect size,100,0.85
+HOPS,Large effect size,0,0.68
+PI,Small effect size,25,0.7
+HOPS,Small effect size,10,0.55
+HOPS,Small effect size,70,0.75
+PI,Large effect size,75,0.66
+CI,Large effect size,75,0.99
+PI,Large effect size,100,0.65
+HOPS,Small effect size,50,0.6
+CI rescaled,Small effect size,35,0.65
+CI,Large effect size,75,0.95
+CI,Small effect size,133,0.8
+HOPS,Small effect size,10,0.54
+CI,Small effect size,50,0.95
+CI rescaled,Small effect size,50,0.53
+PI,Large effect size,50,0.65
+CI rescaled,Small effect size,50,0.65
+CI rescaled,Small effect size,125,0.95
+CI rescaled,Large effect size,50,0.9
+PI,Large effect size,99,0.7
+CI,Large effect size,94,0.74
+CI rescaled,Small effect size,20,0.8
+CI rescaled,Small effect size,102,0.75
+CI,Large effect size,50,1
+PI,Small effect size,40,0.55
+HOPS,Small effect size,75,0.65
+CI,Large effect size,0,1
+PI,Small effect size,14,0.52
+CI rescaled,Small effect size,50,1
+CI rescaled,Large effect size,50,0.75
+HOPS,Small effect size,0,0.57
+CI rescaled,Small effect size,50,0.6
+PI,Large effect size,0,0.75
+CI rescaled,Large effect size,155,0.75
+CI rescaled,Large effect size,225,1
+CI rescaled,Small effect size,40,0.65
+HOPS,Small effect size,1,0.54
+CI rescaled,Small effect size,50,1
+CI,Small effect size,50,0.7
+CI,Large effect size,50,0.9
+HOPS,Large effect size,100,0.8
+HOPS,Large effect size,74,0.9
+CI,Small effect size,20,0.75
+CI,Small effect size,100,0.55
+CI rescaled,Small effect size,100,1
+PI,Small effect size,120,0.8
+CI rescaled,Large effect size,95,0.95
+HOPS,Large effect size,0,0.75
+PI,Small effect size,100,0.85
+HOPS,Small effect size,25,0.52
+CI,Large effect size,100,1
+CI,Large effect size,50,1
+PI,Small effect size,30,0.75
+CI rescaled,Large effect size,75,0.99
+HOPS,Small effect size,0,0.6
+CI,Small effect size,25,0.6
+CI,Large effect size,55,1
+CI rescaled,Small effect size,50,0.9
+HOPS,Large effect size,75,0.75
+CI rescaled,Large effect size,100,1
+PI,Large effect size,40,0.8
+CI,Large effect size,248,0.95
+CI rescaled,Large effect size,100,1
+HOPS,Large effect size,125,0.67
+HOPS,Large effect size,122,0.5
+CI rescaled,Large effect size,75,0.95
+PI,Small effect size,50,0.8
+HOPS,Large effect size,147,0.85
+CI,Large effect size,50,1
+CI,Large effect size,230,0.99
+HOPS,Large effect size,0,0.9
+CI,Large effect size,50,0.9
+PI,Small effect size,100,0.65
+CI rescaled,Small effect size,125,0.99
+CI,Large effect size,20,0.8
+PI,Small effect size,100,0.75
+HOPS,Large effect size,20,0.7
+CI rescaled,Small effect size,20,0.53
+HOPS,Large effect size,65,0.65
+CI rescaled,Large effect size,75,0.51
+PI,Small effect size,75,0.6
+CI,Small effect size,50,0.75
+CI rescaled,Small effect size,170,0.95
+CI rescaled,Small effect size,98,1
+CI,Large effect size,19,0.75
+CI,Large effect size,40,0.8
+HOPS,Small effect size,25,0.55
+PI,Small effect size,60,0.85
+PI,Large effect size,228,0.5
+PI,Large effect size,200,0.8
+HOPS,Small effect size,5,0.55
+CI rescaled,Small effect size,123,0.95
+HOPS,Small effect size,50,0.75
+HOPS,Large effect size,14,0.75
+CI rescaled,Small effect size,30,0.75
+PI,Large effect size,30,0.57
+CI,Large effect size,125,0.99
+CI,Large effect size,5,0.75
+CI rescaled,Small effect size,22,0.75
+CI rescaled,Large effect size,100,0.9
+PI,Large effect size,40,0.95
+HOPS,Large effect size,0,0.7
+PI,Large effect size,125,0.75
+HOPS,Large effect size,50,0.75
+CI,Large effect size,153,0.85
+CI rescaled,Large effect size,240,0.99
+HOPS,Small effect size,25,0.52
+CI,Large effect size,50,1
+CI,Small effect size,50,0.75
+CI,Small effect size,76,0.75
+PI,Large effect size,40,0.8
+HOPS,Small effect size,32,0.65
+HOPS,Small effect size,36,0.65
+HOPS,Small effect size,15,0.6
+PI,Small effect size,50,0.6
+HOPS,Large effect size,135,0.5
+PI,Large effect size,49,0.75
+PI,Small effect size,0,0.6
+CI rescaled,Large effect size,170,0.95
+CI rescaled,Large effect size,0,0.99
+PI,Large effect size,50,0.7
+CI,Small effect size,100,0.95
+HOPS,Small effect size,150,0.75
+CI,Large effect size,150,1
+PI,Small effect size,30,0.6
+CI,Large effect size,0,0.95
+CI,Large effect size,75,0.75
+CI rescaled,Large effect size,25,0.7
+CI,Large effect size,73,0.95
+PI,Large effect size,50,0.6
+CI rescaled,Large effect size,20,0.8
+CI,Large effect size,156,0.75
+CI,Small effect size,100,1
+CI,Small effect size,58,0.5
+PI,Large effect size,50,0.65
+PI,Small effect size,50,0.54
+PI,Large effect size,0,0.75
+PI,Large effect size,150,0.51
+CI,Large effect size,115,0.7
+PI,Small effect size,20,0.54
+HOPS,Large effect size,100,0.75
+HOPS,Large effect size,55,0.7
+CI rescaled,Small effect size,150,0.98
+CI,Large effect size,100,0.75
+PI,Large effect size,0,0.65
+HOPS,Large effect size,238,1
+CI,Small effect size,45,0.7
+CI,Large effect size,100,0.5
+CI rescaled,Large effect size,0,1
+CI rescaled,Small effect size,81,0.9
+PI,Small effect size,0,0.54
+HOPS,Small effect size,40,0.54
+CI rescaled,Large effect size,100,0.99
+CI rescaled,Large effect size,50,0.95
+PI,Small effect size,2,0.75
+HOPS,Large effect size,55,0.7
+CI rescaled,Small effect size,50,0.65
+CI rescaled,Large effect size,62,0.95
+CI,Large effect size,51,0.95
+PI,Large effect size,125,0.9
+CI,Large effect size,73,0.75
+CI,Small effect size,200,0.75
+CI,Large effect size,100,0.75
+CI,Large effect size,72,0.95
+CI,Small effect size,80,0.75
+CI,Small effect size,5,0.9
+HOPS,Large effect size,125,0.68
+HOPS,Large effect size,0,0.6
+CI,Small effect size,121,1
+CI,Large effect size,200,0.98
+PI,Large effect size,50,0.63
+CI,Small effect size,30,0.7
+HOPS,Small effect size,50,0.8
+CI,Small effect size,112,0.8
+CI,Large effect size,245,1
+CI rescaled,Large effect size,110,0.67
+PI,Small effect size,136,0.5
+CI rescaled,Large effect size,55,0.8
+CI,Small effect size,100,0.75
+PI,Small effect size,10,0.54
+CI,Large effect size,50,0.9
+PI,Small effect size,50,0.7
+HOPS,Large effect size,150,0.6
+HOPS,Small effect size,30,0.6
+CI rescaled,Large effect size,50,0.95
+PI,Large effect size,15,0.75
+CI,Small effect size,240,0.99
+CI,Small effect size,50,0.9
+CI rescaled,Small effect size,50,0.95
+PI,Small effect size,100,0.75
+PI,Large effect size,200,0.75
+CI,Large effect size,0,1
+CI rescaled,Small effect size,99,0.9
+PI,Small effect size,245,0.6
+CI,Small effect size,100,0.95
+CI,Large effect size,60,0.95
+CI rescaled,Small effect size,100,1
+CI,Small effect size,150,0.98
+HOPS,Small effect size,23,0.57
+CI,Large effect size,125,1
+HOPS,Large effect size,100,0.7
+HOPS,Large effect size,125,0.75
+HOPS,Small effect size,100,0.55
+CI rescaled,Large effect size,100,0.97
+CI,Large effect size,50,0.95
+CI rescaled,Small effect size,100,0.85
+CI rescaled,Small effect size,85,0.95
+PI,Small effect size,76,0.95
+CI,Large effect size,25,0.75
+CI,Small effect size,75,1
+HOPS,Small effect size,75,0.75
+PI,Large effect size,152,0.75
+HOPS,Large effect size,50,0.7
+CI,Small effect size,249,1
+CI,Large effect size,10,0.95
+HOPS,Small effect size,62,0.65
+CI rescaled,Large effect size,200,1
+HOPS,Large effect size,50,0.85
+HOPS,Small effect size,57,0.65
+CI,Small effect size,0,0.7
+PI,Small effect size,10,0.6
+CI rescaled,Small effect size,30,0.85
+CI,Small effect size,131,1
+HOPS,Small effect size,26,0.54
+HOPS,Large effect size,100,0.8
+CI rescaled,Large effect size,30,0.93
+CI rescaled,Large effect size,100,1
+CI rescaled,Large effect size,150,0.98
+CI,Small effect size,50,0.85
+HOPS,Small effect size,50,0.6
+CI rescaled,Small effect size,10,0.95
+CI,Large effect size,50,0.88
+CI rescaled,Small effect size,30,0.75
+CI,Small effect size,50,0.7
+HOPS,Large effect size,75,0.75
+CI,Small effect size,125,0.95
+CI rescaled,Small effect size,50,0.9
+PI,Large effect size,241,0.5
+PI,Large effect size,25,0.68
+HOPS,Small effect size,100,0.65
+HOPS,Large effect size,51,0.6
+HOPS,Large effect size,100,0.9
+CI,Large effect size,142,0.95
+PI,Small effect size,45,0.55
+CI,Small effect size,8,0.8
+PI,Small effect size,150,0.7
+PI,Large effect size,125,0.75
+CI rescaled,Large effect size,130,1
+PI,Large effect size,50,0.7
+CI,Small effect size,85,0.99
+PI,Large effect size,50,0.75
+CI rescaled,Small effect size,0,1
+HOPS,Large effect size,10,0.55
+PI,Large effect size,50,0.75
+CI,Small effect size,10,1
+PI,Large effect size,75,0.9
+CI,Large effect size,50,1
+PI,Large effect size,75,0.8
+CI rescaled,Large effect size,100,0.95
+HOPS,Small effect size,75,0.6
+CI,Large effect size,0,0.98
+HOPS,Small effect size,50,0.6
+CI,Large effect size,95,0.9
+CI,Small effect size,48,0.05
+CI rescaled,Large effect size,0,0.5
+HOPS,Large effect size,150,0.65
+CI rescaled,Small effect size,225,0.6
+PI,Small effect size,0,0.75
+PI,Large effect size,20,0.75
+CI,Small effect size,120,0.75
+HOPS,Large effect size,50,0.8
+HOPS,Small effect size,200,0.8
+PI,Large effect size,75,0.5
+PI,Small effect size,80,0.7
+CI rescaled,Small effect size,55,0.75
+HOPS,Large effect size,75,0.8
+CI,Small effect size,95,0.8
+CI,Large effect size,100,1
+HOPS,Large effect size,70,0.75
+HOPS,Small effect size,0,0.55
+HOPS,Large effect size,0,0.67
+HOPS,Small effect size,10,0.6
+CI,Large effect size,115,0.8
+CI,Small effect size,50,0.95
+HOPS,Large effect size,71,0.7
+CI,Large effect size,50,0.99
+PI,Large effect size,0,0.75
+PI,Large effect size,30,0.6
+CI rescaled,Small effect size,50,0.75
+HOPS,Large effect size,0,0.51
+HOPS,Small effect size,50,0.7
+HOPS,Large effect size,116,0.8
+CI,Small effect size,51,0.65
+PI,Large effect size,75,0.7
+CI,Large effect size,100,0.75
+HOPS,Large effect size,50,0.8
+CI,Small effect size,51,0.7
+CI,Small effect size,48,0.7
+CI,Large effect size,125,0.95
+HOPS,Large effect size,50,0.7
+CI rescaled,Large effect size,75,0.99
+HOPS,Large effect size,201,0.75
+HOPS,Large effect size,100,0.8
+CI,Small effect size,100,0.7
+PI,Small effect size,168,0.8
+PI,Small effect size,0,0.7
+PI,Large effect size,150,0.7
+PI,Large effect size,50,1
+PI,Large effect size,10,0.65
+HOPS,Small effect size,100,0.65
+PI,Small effect size,50,0.74
+HOPS,Large effect size,50,0.75
+PI,Large effect size,50,0.98
+PI,Large effect size,0,1
+CI rescaled,Small effect size,175,1
+CI,Small effect size,90,0.95
+HOPS,Large effect size,135,0.25
+PI,Small effect size,50,0.55
+CI rescaled,Small effect size,50,0.9
+PI,Small effect size,50,0.6
+CI rescaled,Small effect size,20,0.65
+CI,Small effect size,30,0.95
+CI rescaled,Large effect size,50,0.9
+CI rescaled,Small effect size,147,1
+HOPS,Small effect size,10,0.6
+CI rescaled,Small effect size,0,0.52
+PI,Small effect size,0,0.55
+HOPS,Small effect size,50,0.75
+CI rescaled,Large effect size,150,0.95
+PI,Large effect size,50,0.7
+CI rescaled,Small effect size,50,0.9
+CI,Large effect size,175,0.85
+PI,Large effect size,150,0.75
+HOPS,Large effect size,37,0.66
+CI rescaled,Large effect size,0,0.9
+PI,Small effect size,10,0.6
+PI,Large effect size,50,0.7
+CI,Large effect size,3,0.95
+CI rescaled,Small effect size,25,0.95
+PI,Small effect size,10,0.55
+PI,Small effect size,15,0.55
+CI rescaled,Small effect size,25,0.75
+HOPS,Large effect size,16,0.9
+HOPS,Small effect size,25,0.6
+HOPS,Small effect size,126,0.75
+PI,Large effect size,35,0.75
+HOPS,Small effect size,50,0.54
+HOPS,Large effect size,100,0.75
+PI,Small effect size,50,0.55
+CI,Large effect size,100,0.99
+PI,Small effect size,100,0.85
+CI,Small effect size,131,0.55
+HOPS,Small effect size,10,0.75
+CI rescaled,Small effect size,120,0.7
+CI,Large effect size,50,0.9
+HOPS,Small effect size,28,0.7
+CI,Small effect size,100,1
+PI,Large effect size,100,0.75
+PI,Large effect size,15,0.75
+CI rescaled,Small effect size,50,0.8
+CI rescaled,Large effect size,30,1
+HOPS,Small effect size,20,0.6
+HOPS,Large effect size,25,0.75
+CI,Large effect size,200,0.99
+PI,Small effect size,75,0.54
+HOPS,Small effect size,0,0.75
+PI,Small effect size,50,0.8
+CI rescaled,Large effect size,50,0.75
+CI rescaled,Small effect size,101,0.65
+CI,Small effect size,24,1
+CI,Small effect size,125,1
+PI,Large effect size,25,0.7
+CI,Large effect size,200,1
+HOPS,Large effect size,119,0.7
+CI,Small effect size,0,0.75
+PI,Small effect size,31,0.98
+PI,Small effect size,49,0.6
+CI rescaled,Small effect size,25,0.95
+CI rescaled,Large effect size,50,1
+HOPS,Large effect size,90,0.75
+CI,Small effect size,125,0.75
+PI,Small effect size,45,0.7
+HOPS,Small effect size,0,0.4
+CI rescaled,Small effect size,10,0.6
+CI rescaled,Small effect size,75,0.95
+HOPS,Small effect size,20,0.55
+PI,Small effect size,0,0.51
+HOPS,Small effect size,50,0.64
+CI rescaled,Large effect size,220,1
+CI,Large effect size,50,0.55
+CI,Small effect size,200,0.99
+CI,Small effect size,100,0.8
+HOPS,Large effect size,25,0.5
+CI rescaled,Small effect size,100,1
+CI rescaled,Large effect size,100,0.85
+HOPS,Large effect size,125,0.75
+CI rescaled,Small effect size,100,0.95
+CI,Small effect size,40,0.75
+PI,Large effect size,10,0.7
+PI,Small effect size,200,0.54
+HOPS,Large effect size,50,0.66
+CI,Large effect size,50,0.99
+HOPS,Small effect size,100,0.75
+CI rescaled,Small effect size,44,0.6
+HOPS,Large effect size,100,0.8
+CI rescaled,Large effect size,25,0.75
+CI,Large effect size,20,0.6
+HOPS,Large effect size,125,0.75
+HOPS,Large effect size,100,0.8
+CI rescaled,Large effect size,15,0.95
+HOPS,Small effect size,74,0.8
+HOPS,Large effect size,239,0.5
+PI,Large effect size,45,0.75
+PI,Large effect size,31,0.9
+CI,Small effect size,200,0.99
+CI,Small effect size,50,0.95
+CI rescaled,Large effect size,121,0.5
+PI,Small effect size,70,0.75
+HOPS,Small effect size,30,0.7
+CI rescaled,Small effect size,45,0.7
+PI,Small effect size,75,0.6
+PI,Large effect size,50,0.7
+CI,Small effect size,100,0.9
+HOPS,Large effect size,100,0.75
+HOPS,Small effect size,0,0.6
+HOPS,Small effect size,10,0.58
+CI rescaled,Large effect size,0,0.75
+PI,Small effect size,50,0.55
+PI,Large effect size,60,0.65
+CI rescaled,Small effect size,100,0.99
+HOPS,Small effect size,25,0.57
+CI rescaled,Small effect size,0,0.6
+CI rescaled,Small effect size,99,0.75
+PI,Small effect size,118,0.8
+CI,Small effect size,0,0.6
+PI,Small effect size,50,0.54
+HOPS,Large effect size,25,0.75
+PI,Large effect size,50,0.75
+PI,Small effect size,0,0.6
+PI,Small effect size,70,0.6
+HOPS,Large effect size,100,0.7
+CI,Large effect size,0,0.01
+HOPS,Large effect size,50,0.95
+HOPS,Large effect size,30,0.65
+CI,Large effect size,200,0.99
+HOPS,Small effect size,50,0.65
+HOPS,Small effect size,100,0.75
+HOPS,Large effect size,50,0.75
+HOPS,Small effect size,0,0.45
+PI,Small effect size,60,0.75
+PI,Large effect size,50,0.52
+CI rescaled,Small effect size,50,0.7
+HOPS,Large effect size,100,0.6
+CI,Large effect size,50,0.99
+HOPS,Small effect size,50,0.75
+PI,Small effect size,5,0.55
+HOPS,Large effect size,50,0.85
+PI,Large effect size,1,0.75
+CI rescaled,Small effect size,40,0.95
+CI rescaled,Small effect size,20,0.75
+CI rescaled,Large effect size,70,1
+CI,Small effect size,50,0.95
+CI,Small effect size,0,0.9
+CI,Small effect size,50,1
+CI rescaled,Large effect size,100,0.95
+CI rescaled,Large effect size,50,0.75
+CI,Large effect size,70,0.85
+HOPS,Large effect size,100,0.95
+CI rescaled,Large effect size,75,1
+CI,Small effect size,40,0.95
+CI rescaled,Large effect size,200,0.99
+PI,Small effect size,100,0.75
+CI rescaled,Large effect size,50,1
+HOPS,Small effect size,125,0.95
+PI,Small effect size,125,0.75
+CI,Large effect size,50,0.95
+CI,Large effect size,50,0.97
+CI,Small effect size,125,0.95
+HOPS,Large effect size,100,0.95
+CI,Large effect size,125,1
+CI rescaled,Small effect size,0,0.55
+CI rescaled,Large effect size,50,0.8
+HOPS,Small effect size,50,0.6
+HOPS,Small effect size,22,0.8
+HOPS,Small effect size,50,0.85
+CI,Large effect size,50,0.85
+CI rescaled,Small effect size,50,0.9
+CI,Large effect size,0,1
+PI,Large effect size,0,0.7
+CI,Small effect size,100,0.99
+PI,Large effect size,50,0.7
+CI rescaled,Small effect size,52,0.7
+CI rescaled,Large effect size,50,1
+HOPS,Large effect size,50,0.85
+HOPS,Large effect size,25,0.75
+PI,Small effect size,50,0.6
+PI,Large effect size,50,0.6
+CI rescaled,Large effect size,25,0.6
+CI,Large effect size,60,1
+CI rescaled,Small effect size,0,0.55
+HOPS,Large effect size,50,0.85
+PI,Small effect size,25,0.75
+CI rescaled,Large effect size,25,1
+CI,Small effect size,50,0.7
+PI,Large effect size,30,0.7
+CI rescaled,Large effect size,6,0.8
+CI,Small effect size,170,0.95
+CI,Large effect size,50,1
+CI,Large effect size,0,0.75
+PI,Large effect size,30,0.56
+CI rescaled,Large effect size,100,0.9
+CI rescaled,Small effect size,48,0.9
+PI,Large effect size,0,0.16
+CI rescaled,Small effect size,20,0.64
+PI,Small effect size,122,0.75
+CI,Small effect size,100,0.75
+CI,Small effect size,50,0.75
+CI,Large effect size,50,0.95
+CI,Small effect size,100,0.9
+PI,Large effect size,10,0.6
+HOPS,Small effect size,100,0.65
+CI rescaled,Large effect size,150,0.95
+CI rescaled,Large effect size,11,0.75
+CI rescaled,Large effect size,30,0.5
+PI,Large effect size,50,0.8
+CI,Small effect size,1,0.95
+HOPS,Large effect size,50,0.65
+CI,Small effect size,150,0.95
+PI,Large effect size,100,0.8
+PI,Small effect size,51,0.75
+PI,Small effect size,30,0.52
+CI rescaled,Small effect size,50,0.52
+CI,Large effect size,114,0.95
+HOPS,Large effect size,50,0.8
+PI,Small effect size,0,0.52
+CI,Large effect size,10,0.65
+CI,Small effect size,10,0.75
+CI rescaled,Large effect size,100,1
+CI rescaled,Small effect size,80,0.75
+CI,Small effect size,200,0.97
+CI rescaled,Small effect size,50,1
+CI rescaled,Large effect size,125,1
+PI,Small effect size,25,0.52
+PI,Small effect size,142,0.5
+CI,Small effect size,75,0.8
+HOPS,Large effect size,25,0.65
+PI,Small effect size,5,0.5
+CI,Large effect size,25,0.95
+HOPS,Small effect size,137,0.95
+HOPS,Large effect size,50,0.7
+PI,Small effect size,0,0.54
+CI,Large effect size,50,0.95
+PI,Small effect size,50,0.6
+CI rescaled,Small effect size,30,0.9
+CI,Large effect size,25,0.95
+HOPS,Small effect size,36,0.7
+CI rescaled,Large effect size,0,0.9
+CI,Large effect size,10,1
+CI,Large effect size,20,0.9
+CI,Small effect size,25,1
+HOPS,Small effect size,20,0.75
+CI,Large effect size,249,0.99
+CI rescaled,Large effect size,50,0.95
+CI,Small effect size,150,0.95
+HOPS,Small effect size,50,0.7
+PI,Small effect size,25,0.51
+PI,Small effect size,40,0.95
+CI,Small effect size,100,0.75
+HOPS,Large effect size,75,0.75
+CI,Small effect size,56,0.66
+HOPS,Small effect size,5,0.55
+CI,Small effect size,77,1
+CI,Small effect size,125,0.8
+CI,Large effect size,245,0.99
+HOPS,Large effect size,60,0.95
+PI,Small effect size,26,0.55
+CI rescaled,Small effect size,50,0.75
+CI,Small effect size,125,0.95
+PI,Small effect size,25,0.55
+HOPS,Small effect size,0,0.51
+PI,Large effect size,249,0.65
+HOPS,Large effect size,50,0.9
+CI rescaled,Large effect size,100,0.9
+CI,Small effect size,50,1
+CI rescaled,Small effect size,50,0.95
+HOPS,Small effect size,20,0.55
+CI,Large effect size,50,0.75
+PI,Large effect size,100,0.85
+CI,Large effect size,75,0.95
+CI,Small effect size,100,0.85
+CI rescaled,Large effect size,75,0.75
+PI,Small effect size,11,0.75
+PI,Small effect size,100,0.6
+CI rescaled,Large effect size,60,1
+HOPS,Small effect size,50,0.7
+CI,Small effect size,10,0.6
+CI,Large effect size,0,1
+HOPS,Large effect size,100,0.8
+PI,Small effect size,150,0.55
+PI,Small effect size,39,0.54
+HOPS,Large effect size,50,0.6
+HOPS,Small effect size,45,0.6
+CI rescaled,Large effect size,0,0.5
+CI rescaled,Large effect size,100,0.98
+CI,Small effect size,90,0.9
+PI,Large effect size,0,0.75
+CI rescaled,Small effect size,150,0.5
+HOPS,Large effect size,200,0.8
+PI,Large effect size,125,0.95
+PI,Large effect size,125,1
+CI rescaled,Large effect size,1,1
+PI,Small effect size,50,0.54
+CI rescaled,Large effect size,35,0.75
+HOPS,Small effect size,50,0.75
+PI,Small effect size,75,0.75
+CI,Small effect size,53,0.75
+HOPS,Small effect size,15,0.75
+CI rescaled,Small effect size,200,0.95
+PI,Large effect size,93,0.75
+CI,Small effect size,10,0.55
+HOPS,Small effect size,74,0.75
+CI,Small effect size,70,0.75
+CI,Large effect size,249,0.95
+PI,Large effect size,74,1
+CI,Large effect size,100,0.95
+CI,Small effect size,100,0.9
+HOPS,Large effect size,184,0.6
+CI rescaled,Large effect size,139,0.5
+HOPS,Small effect size,40,0.58
+CI,Large effect size,51,0.99
+PI,Small effect size,25,0.6
+HOPS,Small effect size,50,0.65
+CI,Large effect size,120,0.5
+PI,Large effect size,230,0.75
+CI,Large effect size,113,0.95
+CI,Small effect size,125,0.7
+CI rescaled,Large effect size,30,0.9
+HOPS,Small effect size,50,0.95
+PI,Large effect size,125,0.8
+CI rescaled,Small effect size,40,0.75
+CI,Small effect size,50,0.9
+CI rescaled,Small effect size,0,0.75
+PI,Small effect size,5,0.55
+PI,Small effect size,27,0.57
+CI,Large effect size,100,0.95
+CI,Large effect size,125,0.51
+CI,Small effect size,50,0.51
+CI,Large effect size,125,0.99
+CI rescaled,Large effect size,125,1
+HOPS,Large effect size,100,0.72
+HOPS,Large effect size,50,0.7
+HOPS,Large effect size,60,0.75
+CI rescaled,Large effect size,0,1
+CI rescaled,Small effect size,200,0.8
+HOPS,Large effect size,100,0.7
+HOPS,Small effect size,10,0.65
+HOPS,Small effect size,20,0.51
+PI,Large effect size,51,0.7
+HOPS,Small effect size,10,0.52
+CI,Small effect size,100,0.95
+CI rescaled,Large effect size,50,0.75
+CI rescaled,Small effect size,160,0.99
+PI,Large effect size,100,0.85
+CI,Small effect size,2,1
+CI rescaled,Small effect size,125,0.9
+HOPS,Large effect size,67,0.75
+PI,Large effect size,50,0.8
+CI,Large effect size,0,0.9
+HOPS,Small effect size,0,0.7
+CI rescaled,Large effect size,50,0.8
+HOPS,Small effect size,30,0.6
+CI rescaled,Large effect size,100,0.95
+CI rescaled,Large effect size,75,0.95
+HOPS,Large effect size,75,0.8
+CI rescaled,Large effect size,200,1
+HOPS,Large effect size,34,1
+CI rescaled,Large effect size,0,0.7
+CI rescaled,Large effect size,150,0.8
+CI rescaled,Small effect size,40,0.7
+HOPS,Small effect size,100,0.55
+HOPS,Small effect size,50,0.65
+HOPS,Small effect size,41,0.7
+CI rescaled,Large effect size,145,0.5
+CI,Large effect size,75,0.9
+CI,Small effect size,50,1
+PI,Large effect size,16,0.75
+HOPS,Large effect size,50,0.6
+PI,Large effect size,75,0.7
+HOPS,Small effect size,0,0.69
+CI,Small effect size,100,0.8
+PI,Small effect size,200,0.6
+CI,Large effect size,101,0.75
+CI,Small effect size,9,0.95
+HOPS,Large effect size,200,1
+CI,Small effect size,50,0.95
+CI,Small effect size,181,0.9
+PI,Large effect size,50,0.6
+CI,Small effect size,125,0.95
+CI rescaled,Small effect size,100,1
+CI rescaled,Small effect size,45,0.75
+CI rescaled,Small effect size,65,0.5
+HOPS,Small effect size,50,0.75
+CI rescaled,Small effect size,230,0.95
+PI,Small effect size,75,0.6
+CI rescaled,Large effect size,25,1
+PI,Large effect size,50,0.85
+CI rescaled,Small effect size,50,0.85
+CI rescaled,Large effect size,50,0.9
+CI rescaled,Large effect size,155,0.75
+CI,Large effect size,50,1
+HOPS,Small effect size,20,0.6
+CI rescaled,Small effect size,30,0.75
+HOPS,Large effect size,70,0.65
+CI rescaled,Large effect size,50,0.55
+HOPS,Large effect size,80,0.8
+HOPS,Large effect size,100,0.7
+CI rescaled,Large effect size,50,1
+CI rescaled,Small effect size,150,0.75
+PI,Large effect size,0,0.84
+PI,Small effect size,50,0.65
+CI,Large effect size,100,0.95
+HOPS,Large effect size,125,0.7
+PI,Small effect size,50,0.65
+HOPS,Large effect size,50,0.64
+PI,Large effect size,30,0.75
+HOPS,Small effect size,150,0.54
+CI rescaled,Small effect size,25,0.7
+CI,Small effect size,100,0.75
+PI,Large effect size,50,0.66
+PI,Large effect size,10,0.7
+PI,Small effect size,50,0.8
+CI rescaled,Large effect size,125,0.75
+HOPS,Large effect size,75,0.95
+CI rescaled,Small effect size,1,0.55
+CI,Small effect size,50,1
+PI,Small effect size,80,0.8
+PI,Large effect size,25,0.6
+PI,Large effect size,25,0.7
+CI,Small effect size,100,0.95
+PI,Large effect size,67,0.65
+CI,Small effect size,150,0.95
+CI rescaled,Small effect size,25,0.95
+CI rescaled,Small effect size,200,0.65
+CI rescaled,Large effect size,50,0.7
+CI,Small effect size,100,0.98
+PI,Small effect size,3,0.51
+CI rescaled,Small effect size,80,0.7
+CI,Small effect size,84,0.8
+HOPS,Large effect size,0,0.4
+CI,Large effect size,249,1
+CI,Small effect size,157,0.99
+CI rescaled,Large effect size,50,1
+HOPS,Large effect size,60,0.85
+CI,Small effect size,168,0.5
+CI,Large effect size,200,1
+HOPS,Small effect size,25,0.8
+CI rescaled,Small effect size,5,1
+PI,Small effect size,0,0.6
+CI rescaled,Small effect size,100,0.9
+PI,Large effect size,100,0.9
+PI,Large effect size,60,0.75
+HOPS,Large effect size,0,0.7
+PI,Large effect size,75,0.65
+CI rescaled,Small effect size,50,1
+CI,Large effect size,64,0.95
+CI,Large effect size,10,1
+CI,Large effect size,25,0.95
+PI,Small effect size,75,0.5
+PI,Large effect size,100,0.7
+CI,Large effect size,50,0.75
+HOPS,Large effect size,100,0.95
+HOPS,Large effect size,69,0.8
+CI,Large effect size,25,0.95
+HOPS,Large effect size,50,0.7
+PI,Small effect size,25,0.75
+PI,Small effect size,25,0.52
+CI rescaled,Small effect size,100,0.7
+HOPS,Large effect size,25,0.75
+PI,Large effect size,20,0.65
+PI,Small effect size,50,0.9
+HOPS,Small effect size,50,0.75
+HOPS,Large effect size,100,1
+HOPS,Small effect size,50,0.75
+CI,Large effect size,50,1
+HOPS,Small effect size,125,0.75
+PI,Small effect size,97,0.75
+PI,Large effect size,0,0.7
+CI,Small effect size,50,0.9
+PI,Small effect size,48,0.75
+CI rescaled,Large effect size,0,0.55
+PI,Large effect size,150,0.9
+HOPS,Large effect size,0,1
+CI,Large effect size,249,1
+HOPS,Small effect size,40,0.65
+CI rescaled,Large effect size,111,1
+HOPS,Small effect size,10,0.52
+PI,Large effect size,15,0.6
+PI,Small effect size,25,0.75
+CI,Small effect size,50,1
+PI,Large effect size,225,0.75
+PI,Large effect size,150,0.95
+HOPS,Small effect size,20,0.8
+HOPS,Large effect size,100,0.7
+PI,Large effect size,20,0.58
+PI,Large effect size,20,0.8
+CI rescaled,Large effect size,0,1
+HOPS,Small effect size,20,0.6
+HOPS,Small effect size,20,0.54
+CI,Large effect size,101,0.99
+CI rescaled,Large effect size,25,0.75
+HOPS,Small effect size,45,0.75
+CI rescaled,Small effect size,200,0.99
+CI rescaled,Small effect size,0,0.95
+HOPS,Large effect size,150,0.75
+PI,Large effect size,30,0.7
+CI rescaled,Small effect size,125,0.95
+HOPS,Small effect size,23,0.8
+CI,Small effect size,119,0.65
+HOPS,Small effect size,150,0.7
+PI,Small effect size,20,0.6
+CI,Large effect size,100,0.95
+CI,Large effect size,150,1
+CI,Small effect size,50,0.95
+PI,Large effect size,50,0.6
+CI rescaled,Small effect size,0,0.9
+PI,Small effect size,25,0.55
+CI rescaled,Large effect size,27,0.85
+CI rescaled,Small effect size,75,0.8
+CI,Large effect size,150,0.99
+HOPS,Small effect size,25,0.65
+CI rescaled,Large effect size,100,1
+HOPS,Large effect size,100,0.75
+CI rescaled,Large effect size,75,1
+PI,Small effect size,0,0.54
+CI rescaled,Large effect size,140,1
+PI,Large effect size,104,0.75
+HOPS,Large effect size,100,0.75
+CI rescaled,Large effect size,50,0.95
+CI rescaled,Large effect size,50,1
+CI,Small effect size,100,0.8
+CI,Large effect size,100,0.95
+CI rescaled,Small effect size,200,0.5
+CI rescaled,Large effect size,25,0.75
+CI rescaled,Large effect size,125,1
+HOPS,Large effect size,5,0.75
+CI rescaled,Large effect size,125,0.85
+PI,Small effect size,108,0.99
+CI,Large effect size,51,0.99
+CI rescaled,Small effect size,50,0.7
+HOPS,Large effect size,128,1
+CI,Small effect size,150,0.8
+PI,Large effect size,0,1
+HOPS,Small effect size,90,0.65
+PI,Small effect size,100,0.65
+PI,Large effect size,50,0.65
+CI,Large effect size,112,0.6
+HOPS,Large effect size,99,0.9
+CI,Large effect size,75,0.9
+CI,Large effect size,152,1
+CI,Small effect size,80,0.8
+CI,Large effect size,50,0.95
+HOPS,Small effect size,100,0.54
+HOPS,Large effect size,27,0.65
+CI,Small effect size,249,0.9
+PI,Small effect size,25,0.75
+HOPS,Large effect size,100,0.75
+PI,Small effect size,50,0.75
+CI rescaled,Large effect size,10,0.95
+PI,Large effect size,50,0.8
+HOPS,Large effect size,196,0.75
+CI rescaled,Small effect size,100,0.6
+HOPS,Small effect size,40,0.75
+PI,Small effect size,0,0.55
+HOPS,Small effect size,77,0.55
+CI,Small effect size,50,1
+PI,Small effect size,25,0.65
+HOPS,Small effect size,115,0.8
+HOPS,Large effect size,25,0.7
+PI,Large effect size,0,0.84
+HOPS,Large effect size,40,0.6
+PI,Small effect size,0,0.52
+CI,Large effect size,125,1
+CI rescaled,Large effect size,101,1
+CI rescaled,Large effect size,98,0.75
+HOPS,Small effect size,50,0.75
+PI,Large effect size,100,0.9
+HOPS,Small effect size,20,0.55
+PI,Small effect size,10,0.6
+CI,Small effect size,8,0.75
+CI,Large effect size,125,0.99
+PI,Small effect size,50,1
+PI,Small effect size,225,0.75
+PI,Large effect size,75,0.6
+CI,Large effect size,50,0.75
+CI,Small effect size,109,0.75
+HOPS,Small effect size,25,1
+HOPS,Small effect size,50,0.52
+PI,Large effect size,30,0.65
+PI,Large effect size,26,0.9
+CI rescaled,Small effect size,50,1
+PI,Large effect size,10,0.6
+PI,Small effect size,249,0.6
+CI,Small effect size,150,0.7
+CI,Small effect size,50,1
+CI rescaled,Small effect size,75,0.8
+CI,Large effect size,50,0.95
+CI,Large effect size,140,0.65
+PI,Large effect size,5,0.8
+PI,Small effect size,100,0.5
+HOPS,Small effect size,50,0.51
+PI,Small effect size,10,0.55
+CI,Small effect size,101,0.95
+CI,Small effect size,50,0.9
+CI rescaled,Large effect size,65,0.99
+PI,Small effect size,100,0.7
+HOPS,Large effect size,25,0.8
+CI rescaled,Small effect size,150,0.95
+CI rescaled,Large effect size,150,0.95
+HOPS,Small effect size,0,0.75
+CI rescaled,Small effect size,50,0.85
+HOPS,Large effect size,35,0.75
+CI rescaled,Small effect size,125,1
+CI,Small effect size,0,0.95
+HOPS,Small effect size,30,0.54
+CI rescaled,Small effect size,10,1
+PI,Large effect size,145,0.8
+HOPS,Large effect size,35,0.7
+PI,Small effect size,50,0.75
+CI rescaled,Small effect size,150,0.8
+CI rescaled,Small effect size,75,0.95
+CI rescaled,Large effect size,50,0.95
+HOPS,Large effect size,121,0.8
+CI rescaled,Small effect size,70,1
+CI,Large effect size,65,0.9
+PI,Small effect size,50,0.95
+CI,Small effect size,125,0.97
+CI,Small effect size,5,0.85
+PI,Large effect size,80,0.7
+CI rescaled,Small effect size,110,1
+CI,Large effect size,100,0.8
+CI,Small effect size,52,0.75
+CI,Small effect size,100,1
+CI rescaled,Small effect size,1,0.55
+HOPS,Large effect size,100,0.8
+CI rescaled,Small effect size,36,0.65
+CI,Small effect size,100,0.6
+CI,Small effect size,204,1
+CI rescaled,Small effect size,0,1
+PI,Small effect size,40,0.7
+CI rescaled,Small effect size,70,0.9
+PI,Small effect size,40,0.7
+PI,Large effect size,30,0.6
+CI rescaled,Small effect size,50,0.75
+CI,Small effect size,243,0.97
+PI,Large effect size,50,0.55
+CI,Large effect size,10,1
+CI rescaled,Small effect size,51,0.55
+CI,Small effect size,150,1
+PI,Large effect size,50,1
+CI,Large effect size,50,0.8
+CI rescaled,Large effect size,40,0.75
+HOPS,Small effect size,50,0.52
+CI rescaled,Large effect size,100,0.75
+CI rescaled,Small effect size,50,0.8
+HOPS,Large effect size,20,0.75
+CI,Small effect size,40,0.95
+PI,Large effect size,100,0.75
+CI,Small effect size,20,0.75
+CI rescaled,Small effect size,100,0.75
+CI,Small effect size,0,0.5
+HOPS,Large effect size,45,0.75
+HOPS,Small effect size,0,0.59
+CI rescaled,Large effect size,102,0.95
+PI,Small effect size,25,0.65
+CI rescaled,Small effect size,0,0.95
+HOPS,Small effect size,50,0.75
+HOPS,Small effect size,0,0.55
+CI rescaled,Small effect size,10,0.7
+CI,Small effect size,200,1
+CI,Small effect size,125,1
+HOPS,Large effect size,100,0.75
+CI rescaled,Small effect size,100,0.9
+PI,Large effect size,100,0.8
+HOPS,Small effect size,50,0.8
+PI,Small effect size,50,0.9
+CI rescaled,Large effect size,50,0.8
+CI,Large effect size,0,1
+CI,Small effect size,70,0.8
+CI rescaled,Small effect size,100,0.99
+HOPS,Small effect size,50,0.65
+HOPS,Small effect size,50,0.55
+CI rescaled,Small effect size,10,0.7
+PI,Large effect size,0,0.45
+HOPS,Large effect size,71,0.85
+HOPS,Small effect size,50,0.6
+CI,Large effect size,125,1
+PI,Large effect size,25,0.85
+CI rescaled,Large effect size,75,0.75
+CI rescaled,Small effect size,20,0.9
+CI,Small effect size,100,0.8
+CI rescaled,Small effect size,100,0.5
+HOPS,Small effect size,50,0.7
+CI rescaled,Small effect size,50,0.95
+PI,Large effect size,10,0.66
+CI rescaled,Small effect size,165,0.5
+PI,Large effect size,50,0.7
+CI,Large effect size,0,0.9
+PI,Small effect size,50,0.95
+PI,Small effect size,120,0.5
+PI,Large effect size,50,0.75
+CI rescaled,Large effect size,20,0.95
+CI rescaled,Small effect size,10,0.8
+CI,Large effect size,140,1
+PI,Small effect size,50,0.6
+CI rescaled,Large effect size,100,0.65
+PI,Small effect size,80,0.75
+PI,Large effect size,35,0.7
+PI,Large effect size,182,0.8
+CI rescaled,Small effect size,249,1
+PI,Large effect size,25,0.8
+HOPS,Large effect size,100,0.7
+PI,Large effect size,50,0.75
+CI rescaled,Small effect size,229,0.99
+HOPS,Small effect size,75,0.75
+PI,Large effect size,100,0.7
+HOPS,Small effect size,245,0.85
+PI,Large effect size,130,0.5
+PI,Small effect size,50,0.75
+CI,Large effect size,190,1
+CI,Large effect size,130,0.6
+CI rescaled,Large effect size,75,0.95
+HOPS,Large effect size,150,0.85
+PI,Small effect size,75,0.75
+CI rescaled,Small effect size,0,1
+CI,Large effect size,10,1
+CI rescaled,Large effect size,125,1
+CI rescaled,Large effect size,50,0.8
+HOPS,Small effect size,20,0.55
+PI,Large effect size,50,0.58
+HOPS,Large effect size,200,0.95
+HOPS,Large effect size,125,0.75
+HOPS,Large effect size,0,0.8
+CI rescaled,Large effect size,50,0.8
+CI,Small effect size,0,0.5
+HOPS,Small effect size,50,0.75
+PI,Small effect size,85,0.85
+CI rescaled,Large effect size,86,0.8
+CI,Small effect size,50,0.75
+PI,Large effect size,40,0.75
+CI rescaled,Large effect size,86,1
+PI,Large effect size,27,0.95
+HOPS,Small effect size,74,0.8
+HOPS,Large effect size,34,0.75
+CI rescaled,Large effect size,50,1
+PI,Small effect size,25,0.6
+PI,Large effect size,0,0.66
+CI rescaled,Large effect size,63,0.8
+PI,Large effect size,50,0.75
+HOPS,Small effect size,40,0.75
+CI rescaled,Large effect size,125,0.85
+HOPS,Large effect size,25,0.55
+HOPS,Large effect size,100,0.75
+PI,Small effect size,101,0.75
+CI rescaled,Small effect size,0,0.75
+HOPS,Small effect size,9,0.55
+CI,Small effect size,50,1
+CI,Large effect size,0,0.8
+CI rescaled,Large effect size,80,0.85
+HOPS,Small effect size,20,0.65
+CI,Small effect size,2,1
+HOPS,Large effect size,100,0.8
+CI rescaled,Large effect size,0,0.95
+PI,Small effect size,25,0.54
+PI,Large effect size,0,0.75
+CI rescaled,Large effect size,249,0.98
+HOPS,Small effect size,26,0.58
+PI,Large effect size,5,0.65
+PI,Small effect size,125,0.75
+HOPS,Large effect size,150,0.75
+CI rescaled,Small effect size,105,0.97
+CI rescaled,Small effect size,100,0.9
+CI rescaled,Small effect size,175,0.98
+CI rescaled,Large effect size,25,0.95
+CI rescaled,Large effect size,200,1
+CI,Small effect size,100,0.95
+CI,Small effect size,50,0.95
+PI,Large effect size,0,0.5
+HOPS,Small effect size,50,0.7
+CI rescaled,Small effect size,175,0.95
+PI,Small effect size,97,0.75
+CI rescaled,Large effect size,0,0.95
+PI,Large effect size,0,0.75
+HOPS,Large effect size,100,0.7
+CI,Small effect size,35,0.75
+PI,Small effect size,75,0.7
+CI,Small effect size,50,0.9
+HOPS,Large effect size,125,0.7
+HOPS,Large effect size,150,0.8
+CI,Small effect size,150,0.95
+CI,Small effect size,75,0.55
+CI rescaled,Large effect size,175,0.99
+CI rescaled,Large effect size,200,0.9
+CI rescaled,Large effect size,18,1
+CI rescaled,Large effect size,50,0.85
+CI rescaled,Small effect size,50,0.7
+PI,Small effect size,0,0.55
+PI,Small effect size,36,0.7
+PI,Large effect size,50,0.75
+CI,Large effect size,100,0.51
+CI rescaled,Large effect size,75,0.9
+CI,Large effect size,125,1
+CI rescaled,Large effect size,48,0.95
+PI,Small effect size,11,0.6
+PI,Small effect size,10,0.52
+PI,Large effect size,50,0.75
+HOPS,Small effect size,200,0.7
+CI,Large effect size,50,0.75
+PI,Large effect size,50,0.75
+CI,Small effect size,53,0.95
+CI rescaled,Large effect size,25,0.8
+CI rescaled,Small effect size,25,0.95
+CI,Large effect size,50,0.95
+CI rescaled,Small effect size,0,0.53
+HOPS,Large effect size,122,0.7
+CI,Large effect size,75,0.95
+CI rescaled,Small effect size,100,0.95
+CI,Large effect size,100,0.6
+PI,Large effect size,10,0.7
+HOPS,Small effect size,50,0.75
+CI,Large effect size,40,0.95
+PI,Large effect size,0,0.75
+CI,Large effect size,71,0.7
+HOPS,Large effect size,50,0.6
+HOPS,Small effect size,34,0.7
+CI,Small effect size,55,0.8
+PI,Small effect size,15,0.7
+PI,Large effect size,50,0.75
+PI,Large effect size,30,0.75
+CI rescaled,Small effect size,136,0.65
+HOPS,Small effect size,30,0.55
+HOPS,Large effect size,50,0.95
+PI,Small effect size,35,0.5
+PI,Large effect size,50,0.58
+HOPS,Large effect size,25,0.75
+HOPS,Large effect size,95,0.58
+CI rescaled,Small effect size,0,0.7
+HOPS,Large effect size,50,0.6
+CI rescaled,Small effect size,60,0.95
+CI,Small effect size,24,0.95
+PI,Large effect size,85,0.6
+HOPS,Large effect size,80,0.75
+CI rescaled,Small effect size,200,0.95
+PI,Small effect size,150,0.8
+HOPS,Large effect size,15,0.75
+HOPS,Small effect size,20,0.5
+CI rescaled,Small effect size,100,0.95
+CI rescaled,Small effect size,100,0.95
+HOPS,Small effect size,200,0.75
+PI,Small effect size,50,0.75
+CI,Large effect size,208,0.9
+CI rescaled,Small effect size,55,0.7
+PI,Small effect size,138,0.65
+CI,Small effect size,249,0.99
+HOPS,Large effect size,150,0.8
+CI rescaled,Small effect size,7,0.52
+CI rescaled,Large effect size,10,0.8
+HOPS,Small effect size,10,0.55
+CI,Small effect size,0,1
+PI,Small effect size,88,0.6
+PI,Small effect size,25,0.6
+CI,Small effect size,40,0.95
+CI,Small effect size,50,0.79
+PI,Small effect size,34,0.5
+CI,Small effect size,50,0.9
+CI,Small effect size,20,0.98
+CI rescaled,Large effect size,20,1
+HOPS,Small effect size,10,0.52
+PI,Small effect size,30,1
+HOPS,Large effect size,50,0.75
+HOPS,Large effect size,50,0.75
+CI rescaled,Large effect size,211,0.8
+PI,Small effect size,25,0.53
+CI,Small effect size,125,0.75
+PI,Large effect size,75,0.8
+HOPS,Small effect size,25,0.7
+CI,Small effect size,150,0.9
+HOPS,Large effect size,100,0.75
+PI,Large effect size,50,0.75
+CI,Small effect size,95,0.75
+CI,Large effect size,30,0.95
+CI rescaled,Large effect size,150,0.7
+CI,Small effect size,150,0.98
+CI,Small effect size,50,0.8
+HOPS,Small effect size,50,0.75
