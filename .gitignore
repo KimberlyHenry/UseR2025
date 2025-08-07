@@ -18,3 +18,13 @@ __pycache__/
 Thumbs.db
 
 /.quarto/
+
+# decktape stuff
+
+docs/*.pdf
+docs/*.png
+docs/*.log
+docs/*.tmp
+docs/slides/
+docs/screenshots/
+

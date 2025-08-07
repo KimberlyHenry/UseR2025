@@ -265,7 +265,7 @@ Kimberly Henry
 <h2>The Game</h2>
 
 <img data-src="images/blorg.png" class="quarto-figure quarto-figure-center r-stretch" style="width:75.0%"><aside class="notes">
-<p>Participants played a playful ice‑boulder game against Blorg. They could rent a ‘special boulder’ to try to slide farther and gain a competitive edge.</p>
+<p>Players competed with Blorg in an ice‑boulder game and could rent a special boulder for a potential edge.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -282,7 +282,7 @@ Kimberly Henry
 <h2>Special Boulder</h2>
 
 <img data-src="images/special_boulder.png" class="quarto-figure quarto-figure-center r-stretch" style="width:75.0%"><aside class="notes">
-<p>The special boulder might be better - or it might not.</p>
+<p>But that boulder might help—or it might not.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -302,7 +302,7 @@ Kimberly Henry
 H_{0}: \mu_{\mathrm{CI}} - \mu_{\mathrm{CI\ rescaled}} = 0
 \]</span></p>
 <aside class="notes">
-<p>To help players decide, they were randomly shown one of four uncertainty visualizations, each showing the special boulder’s advantage over the standard one. The key difference is how the uncertainty around the group means is displayed. Today, we’re focusing on the CI versus Rescaled CI conditions to see if willingness to pay differs. The Rescaled CI shows the same data as the standard CI, but the axis is compressed, making the difference appear more dramatic. Our null hypothesis is that there’s no difference between the two groups.</p>
+<p>To help players decide, they were shown one of four uncertainty visualizations. Each shows the average sliding distance for the standard and special boulders, along with uncertainty around those averages. Today, we’re focusing on the Confidence Interval and Rescaled Confidence Interval conditions. Both show the same data, but the rescaled CI uses a wider y‑axis, which makes the difference between the boulders look smaller. Our null hypothesis is that there’s no difference in willingness to pay between these two visualization conditions.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -320,7 +320,7 @@ H_{0}: \mu_{\mathrm{CI}} - \mu_{\mathrm{CI\ rescaled}} = 0
 <p>Pick two conditions &amp; calculate <strong>observed difference</strong></p>
 
 <img data-src="UseR2025_slidedeck_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"><aside class="notes">
-<p>To begin the activity, we first pick two groups and compute the observed mean difference plus 95% CIs. This anchors students in the real effect before any shuffling happens.</p>
+<p>To begin the activity, we first pick two groups and compute the observed mean difference in willingness to pay for the special boulder. This anchors students in the real effect before any shuffling happens.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -337,7 +337,7 @@ H_{0}: \mu_{\mathrm{CI}} - \mu_{\mathrm{CI\ rescaled}} = 0
 <h2>2: Shuffle Labels to Test the Null</h2>
 
 <img data-src="UseR2025_slidedeck_files/figure-revealjs/unnamed-chunk-3-1.png" width="1152" class="r-stretch"><aside class="notes">
-<p>Next, we randomly reassign group labels 5000 times. The first panel shows the real data; the rest show shuffled labels—letting students watch the null world form step by step.”</p>
+<p>Next, we randomly reassign group labels 5000 times. The first panel shows the real data; the rest show shuffled labels—letting students watch the null world form step by step.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -354,7 +354,7 @@ H_{0}: \mu_{\mathrm{CI}} - \mu_{\mathrm{CI\ rescaled}} = 0
 <h2>3: Build the Null Distribution</h2>
 
 <img data-src="UseR2025_slidedeck_files/figure-revealjs/unnamed-chunk-4-1.png" width="960" class="r-stretch"><aside class="notes">
-<p>For each shuffle, we calculate the difference in means. Overlaying these 5000 differences gives an empirical null distribution — that is, our hands‑on sampling distribution under the null hypothesis.</p>
+<p>We shuffle, calculate the mean difference 5,000 times, and those differences form our hands‑on sampling distribution under the null.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -383,8 +383,8 @@ H_{0}: \mu_{\mathrm{CI}} - \mu_{\mathrm{CI\ rescaled}} = 0
 </div>
 </div>
 <aside class="notes">
-<p>We simply count the proportion of shuffled differences at least as extreme as what we observed. That fraction is the p‑value — no formulas, just data in action.</p>
-<p>Our permutation test shows that 4.8% of 5000 random shuffles produced group differences as extreme as our observed difference (-11.75).</p>
+<p>We simply count the proportion of shuffled differences at least as extreme as what we observed. That fraction is the p‑value.</p>
+<p>Our permutation test shows that 4.8% of 5000 random shuffles produced group differences as larger, or larger than, our observed difference (-11.75).</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -406,7 +406,7 @@ H_{0}: \mu_{\mathrm{CI}} - \mu_{\mathrm{CI\ rescaled}} = 0
 </div>
 </div>
 <img data-src="UseR2025_slidedeck_files/figure-revealjs/unnamed-chunk-6-1.png" width="960" class="r-stretch"><aside class="notes">
-<p>The SD of our null differences is the standard error for the group difference. It shows the typical variation under the null hypothesis.</p>
+<p>The standard deviation of the null differences is our standard error—it shows the typical variation we’d expect under the null hypothesis.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -424,7 +424,7 @@ H_{0}: \mu_{\mathrm{CI}} - \mu_{\mathrm{CI\ rescaled}} = 0
 <p><code>Group Difference/SE = Standardized Test Statistic</code></p>
 
 <img data-src="UseR2025_slidedeck_files/figure-revealjs/unnamed-chunk-7-1.png" width="960" class="r-stretch"><aside class="notes">
-<p>We divide the observed difference by that SE to get a standardized test statistic. On the null density, we shade the central 95% and mark where our result falls — so students see how ‘far out’ it really is.</p>
+<p>We standardize the difference using the SE, then plot it on the null curve so students can see how far out it lands.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -455,7 +455,7 @@ H_{0}: \mu_{\mathrm{CI}} - \mu_{\mathrm{CI\ rescaled}} = 0
 </div>
 </div>
 <aside class="notes">
-<p>Finally, we run a classic t‑test and compare. This side‑by‑side helps students appreciate when permutation and theory agree — or why they might differ.</p>
+<p>Finally, we run a classic t‑test and compare. This side‑by‑side helps students appreciate when permutation and parametric approaches agree — or why they might differ.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -477,7 +477,7 @@ H_{0}: \mu_{\mathrm{CI}} - \mu_{\mathrm{CI\ rescaled}} = 0
 </ul>
 <p>🔗 <strong>Links</strong>: <a href="https://kimberlyhenry.github.io/UseR2025/" class="uri">https://KimberlyHenry.github.io/UseR2025/</a></p>
 <aside class="notes">
-<p>webR runs fully in the browser — no installs are needed. All code lives on GitHub, so you can drop this into any course and adapt it to new datasets in minutes.</p>
+<p>WebR runs in the browser—no installs. Everything for the activity is on GitHub, ready to use or adapt.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;

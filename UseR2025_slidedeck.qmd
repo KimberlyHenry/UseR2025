@@ -63,7 +63,7 @@ This activity uses data from Hofman et al., shared on the Open Science Framewo
 ![](images/blorg.png){fig-align="center" width="75%"}
 
 ::: notes
-Participants played a playful ice‑boulder game against Blorg. They could rent a ‘special boulder’ to try to slide farther and gain a competitive edge.
+Players competed with Blorg in an ice‑boulder game and could rent a special boulder for a potential edge.
 :::
 
 ## Special Boulder
@@ -71,7 +71,7 @@ Participants played a playful ice‑boulder game against Blorg. They could rent 
 ![](images/special_boulder.png){fig-align="center" width="75%"}
 
 ::: notes
-The special boulder might be better - or it might not.
+But that boulder might help—or it might not.
 :::
 
 ## The Experimental Conditions
@@ -83,7 +83,7 @@ H_{0}: \mu_{\mathrm{CI}} - \mu_{\mathrm{CI\ rescaled}} = 0
 $$
 
 ::: notes
-To help players decide, they were randomly shown one of four uncertainty visualizations, each showing the special boulder’s advantage over the standard one. The key difference is how the uncertainty around the group means is displayed. Today, we’re focusing on the CI versus Rescaled CI conditions to see if willingness to pay differs. The Rescaled CI shows the same data as the standard CI, but the axis is compressed, making the difference appear more dramatic. Our null hypothesis is that there’s no difference between the two groups.
+To help players decide, they were shown one of four uncertainty visualizations. Each shows the average sliding distance for the standard and special boulders, along with uncertainty around those averages. Today, we’re focusing on the Confidence Interval and Rescaled Confidence Interval conditions. Both show the same data, but the rescaled CI uses a wider y‑axis, which makes the difference between the boulders look smaller. Our null hypothesis is that there’s no difference in willingness to pay between these two visualization conditions.
 :::
 
 ## 1: Select & Observe
@@ -163,7 +163,7 @@ df_summary |>
 ```
 
 ::: notes
-To begin the activity, we first pick two groups and compute the observed mean difference plus 95% CIs. This anchors students in the real effect before any shuffling happens.
+To begin the activity, we first pick two groups and compute the observed mean difference in willingness to pay for the special boulder. This anchors students in the real effect before any shuffling happens.
 :::
 
 ------------------------------------------------------------------------
@@ -262,7 +262,7 @@ ggplot(output_subset, aes(x = shuffled_group, y = wtp_final, color = original_gr
 ```
 
 ::: notes
-Next, we randomly reassign group labels 5000 times. The first panel shows the real data; the rest show shuffled labels—letting students watch the null world form step by step.”
+Next, we randomly reassign group labels 5000 times. The first panel shows the real data; the rest show shuffled labels—letting students watch the null world form step by step.
 :::
 
 ## 3: Build the Null Distribution
@@ -341,7 +341,7 @@ mean_diff_permutations |>
 ```
 
 ::: notes
-For each shuffle, we calculate the difference in means. Overlaying these 5000 differences gives an empirical null distribution --- that is, our hands‑on sampling distribution under the null hypothesis.
+We shuffle, calculate the mean difference 5,000 times, and those differences form our hands‑on sampling distribution under the null.
 :::
 
 ## 4: Calculate Empirical p-value
@@ -371,9 +371,9 @@ cat(sprintf("p = %.3f (%.1f%% of %d permutations)",
 ```
 
 ::: notes
-We simply count the proportion of shuffled differences at least as extreme as what we observed. That fraction is the p‑value --- no formulas, just data in action.
+We simply count the proportion of shuffled differences at least as extreme as what we observed. That fraction is the p‑value.
 
-Our permutation test shows that `r sprintf("%.1f%%", 100*p_value)` of `r nrow(mean_diff_permutations)` random shuffles produced group differences as extreme as our observed difference (`r sprintf("%.2f", observed_diff)`).
+Our permutation test shows that `r sprintf("%.1f%%", 100*p_value)` of `r nrow(mean_diff_permutations)` random shuffles produced group differences as larger, or larger than, our observed difference (`r sprintf("%.2f", observed_diff)`).
 :::
 
 ## 5: Compute the Standard Error
@@ -398,7 +398,7 @@ cat("Standard Error (SE) (i.e., SD of null distribution):",
 ```
 
 ::: notes
-The SD of our null differences is the standard error for the group difference. It shows the typical variation under the null hypothesis.
+The standard deviation of the null differences is our standard error—it shows the typical variation we’d expect under the null hypothesis.
 :::
 
 ## 6: Construct the Test Statistic
@@ -467,7 +467,7 @@ ggplot(std_mean_diff_permutations, aes(x = std_null_diff)) +
     "text",
     x = std_test_statistic,
     y = max(density_df$y) * 0.6,
-    label = "Observed standardized \ntest statistic \n -11.75/5.67 = -2.07",
+    label = "Observed standardized \ntest statistic \n -11.75/5.79 = -2.03",
     fontface = "bold",
     family = "sans",
     color = "#7bc043",
@@ -485,7 +485,7 @@ ggplot(std_mean_diff_permutations, aes(x = std_null_diff)) +
 ```
 
 ::: notes
-We divide the observed difference by that SE to get a standardized test statistic. On the null density, we shade the central 95% and mark where our result falls --- so students see how ‘far out’ it really is.
+We standardize the difference using the SE, then plot it on the null curve so students can see how far out it lands.
 :::
 
 ------------------------------------------------------------------------
@@ -505,7 +505,7 @@ my_groups |>
 ```
 
 ::: notes
-Finally, we run a classic t‑test and compare. This side‑by‑side helps students appreciate when permutation and theory agree --- or why they might differ.
+Finally, we run a classic t‑test and compare. This side‑by‑side helps students appreciate when permutation and parametric approaches agree --- or why they might differ.
 :::
 
 ## Instructor Benefits
@@ -517,5 +517,5 @@ Finally, we run a classic t‑test and compare. This side‑by‑side helps stud
 🔗 **Links**: [https://KimberlyHenry.github.io/UseR2025/](https://kimberlyhenry.github.io/UseR2025/){.uri}
 
 ::: notes
-webR runs fully in the browser --- no installs are needed. All code lives on GitHub, so you can drop this into any course and adapt it to new datasets in minutes.
+WebR runs in the browser—no installs. Everything for the activity is on GitHub, ready to use or adapt.
 :::

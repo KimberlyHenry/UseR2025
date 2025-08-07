@@ -50,8 +50,6 @@ df <-
 
 In this activity, we will work with data from [a study](https://osf.io/rcfy5/) conducted by Drs. Jake Hofman, Daniel Goldstein & Jessica Hullman.
 
-<br>
-
 ![](images/viz_effects_title.png){fig-align="center"}
 
 In the experiment, participants were told they were **athletes competing in a boulder sliding game** against an equally skilled opponent named Blorg. The objective was to **slide a boulder farther on ice than their opponent to win a 250 Ice Dollar prize**, awarded to the contestant with the longest slide. They had the option to **rent a "special boulder"** --- a potentially advantageous (but not guaranteed) upgrade expected to improve their sliding distance in their final competition. Participants then **saw a visualization with statistics comparing the standard and special boulders**. After studying the randomly selected visualization, the participants **indicated how much they would be willing to pay for the special boulder** and estimated their probability of winning with it.
@@ -114,21 +112,9 @@ In this graph:
 
 -   **Error bars** represent **95% confidence intervals** for the group means. They provide a sense of the **precision of our estimates** --- narrower bars indicate more precise estimates.
 
-# Goal of this activity
-
-In this activity, we will investigate whether the **average willingness to pay for the special boulder** differs between two visualization conditions (e.g., CI vs. PI).
-
-You will:
-
-1.  **Select two conditions** and calculate the observed difference in mean willingness to pay.
-
-2.  **Evaluate how unusual that difference is under the null hypothesis** that there is no true effect.
-
-By the end of this activity, you’ll **interpret the resulting *p*‑value** and gain intuition for deciding whether an observed difference likely reflects **real group differences** or is simply **due to chance**.
-
 # What is a permutation test?
 
-When we run a statistical test, we want to know if an observed difference---like how much more students are willing to pay for the **special boulder** in one condition versus another --- is just **random chance** or reflects a **real effect**.
+When we run a statistical test, we want to know if an observed difference---like how much more participants are willing to pay for the **special boulder** in one condition versus another --- is just **random chance** or reflects a **real effect**.
 
 A **permutation test** answers this by showing what the data would look like **if there were no real difference** between the conditions. We do this by repeatedly **shuffling the group labels** in the dataset. Each time we shuffle:
 
@@ -154,9 +140,7 @@ shuffled_groups
 
 Notice that the data frame now has the "real condition" (**graph_type**) and a randomly shuffled condition (**shuffled_group**).
 
-We need **many shuffled datasets** to accurately assess how unusual our observed difference is.
-
-In a permutation test, we don’t rely on a single shuffle. Instead, we **repeatedly shuffle the group labels** --- thousands of times. For each shuffle, we:
+We need **many shuffled datasets** to accurately assess how unusual our observed difference is. Therefore, in a permutation test, we don’t rely on a single shuffle. Instead, we **repeatedly shuffle the group labels** --- thousands of times. For each shuffle, we:
 
 1.  Randomly reassign participants to groups.
 
@@ -166,7 +150,7 @@ In a permutation test, we don’t rely on a single shuffle. Instead, we **repeat
 
 Repeating this process produces a **null distribution of mean differences** --- what we’d expect to see **purely by chance** if the null hypothesis were true. Comparing our **observed difference** to this null distribution shows whether it’s likely due to **random variation** or reflects a **real effect**.
 
-The graph below recreates the earlier plot using 5,000 shuffled datasets. It displays the observed group means along with their variability under repeated random shuffles. While the error bars in the previous graph summarize the uncertainty **around our observed** group means (i.e. the familiar 95% confidence intervals), this plot shows what those group means would look like **if there really were no effect**. Here, each point is the average willingness‐to‐pay from one of 5,000 random reassignments of labels, and the shaded bands mark the **central 95% region** of that *null* distribution. In other words, these “permutation intervals” visualize the range of mean differences we’d expect **purely by chance** under the null hypothesis.
+The graph below recreates the earlier plot using 1,000 shuffled datasets. It displays the observed group means along with their variability under repeated random shuffles. While the error bars in the previous graph summarize the uncertainty **around our observed** group means (i.e. the familiar 95% confidence intervals), this plot shows what those group means would look like **if there really were no effect**. Here, each point is the average willingness‐to‐pay from one of 1,000 random reassignments of labels, and the shaded bands mark the **central 95% region** of that *null* distribution. In other words, these “permutation intervals” visualize the range of mean differences we’d expect **purely by chance** under the null hypothesis.
 
 ```{r}
 #| echo: false
@@ -213,6 +197,18 @@ df_summary |>
 
 As expected, the shuffled groups show almost no difference in willingness to pay, reflecting that random reassignment does not create a real effect.
 
+# Goal of this activity
+
+In this activity, we will investigate whether the **average willingness to pay for the special boulder** differs between two visualization conditions (e.g., CI vs. PI).
+
+You will:
+
+1.  **Select two conditions** and calculate the observed difference in mean willingness to pay.
+
+2.  **Evaluate how unusual that difference is under the null hypothesis** that there is no true effect.
+
+By the end of this activity, you’ll **interpret the resulting *p*‑value** and gain intuition for deciding whether an observed difference likely reflects **real group differences** or is simply **due to chance**.
+
 # Conduct a null hypothesis significance test using a permutation test
 
 Let's use the permutation test approach to determine if there is a significant difference in willingness to pay for the special boulder between two selected groups.
@@ -243,7 +239,7 @@ df |> head(n = 10)
 
 ## Step 1: Choose two conditions to compare
 
-First, **choose two conditions** to compare. The code below will assign one condition to be called Group A, and the other condition to be called Group B. By default HOPS and PI are compared, but you can change these to compare other groups.
+Next, **choose two conditions** to compare. The code below will assign one condition to be called Group A, and the other condition to be called Group B. By default HOPS and PI are compared, but you can change these to compare other groups.
 
 -   CI
 -   CI rescaled
@@ -257,8 +253,8 @@ Press **Run Code** to create the subsetted data frame for the investigation.
 ```{webr}
 
 # input the names of the groups you'd like to compare
-selection_1 <- "PI"
-selection_2 <- "HOPS"
+selection_1 <- "HOPS"
+selection_2 <- "PI"
 
 my_groups <-
   df |> 
@@ -343,7 +339,7 @@ df_summary <-
   )
 
 # calculate the difference for annotation
-observed_diff <- diff(df_summary$mean_wtp)
+observed_diff_for_graph <- diff(df_summary$mean_wtp)
 
 # calculate midpoint for label placement
 midpoint_y <- mean(df_summary$mean_wtp)
@@ -357,7 +353,7 @@ df_summary |>
     )
   ) |> 
   ggplot(mapping = aes(x = group, y = mean_wtp, color = group_color)) +
-  # Confidence intervals
+  # confidence intervals
   geom_linerange(
     mapping = aes(ymin = ci_low, ymax = ci_high),
     linewidth = 2,
@@ -373,7 +369,7 @@ df_summary |>
   ) +
   geom_label(
     x = 1.5, y = midpoint_y,
-    label = sprintf("Difference: %.2f", observed_diff),
+    label = sprintf("Difference: %.2f", observed_diff_for_graph),
     color = "black", fill = "lightgrey", size = 5
   ) +
   scale_color_identity() +  
@@ -397,7 +393,7 @@ df_summary |>
 
 ### Create shuffled datasets
 
-Using permutations, we can approximate the sampling distribution of the difference in willingness to pay between the two groups under the null hypothesis. Press **Run Code** to perform 5,000 permutations, calculating the mean willingness to pay for each shuffled group in every iteration. This will take a few minutes.
+Using permutations, we can approximate the sampling distribution of the difference in willingness to pay between the two groups under the null hypothesis. Press **Run Code** to perform 1,000 permutations, calculating the mean willingness to pay for each shuffled group in every iteration. This will take a few minutes.
 
 ```{webr}
 
@@ -419,7 +415,7 @@ cat("✅ Completed", n_permutations, "permutations.\n")
 
 ```
 
-### Take a peek at the raw data and first three suffled datasets
+### Take a peek at the raw data and first three shuffled datasets
 
 The graphic below shows how permutation works. The first panel displays the original data with the true group assignments, and the next three panels illustrate the first three shuffles of those assignments. Notice that after shuffling, the group labels no longer carry real meaning --- any patterns that emerge are purely due to chance.
 
@@ -508,7 +504,7 @@ Next, we’ll calculate the difference in mean willingness to pay between the tw
 
 # turn list into a df
 df_permutations <- permutation_list |>
-  # Compute group means for each permutation
+  # compute group means for each permutation
   lapply(function(df) {
     df |>
       group_by(shuffled_group) |>
@@ -624,7 +620,7 @@ mean_diff_permutations |> count(extreme_diff)
 
 Here we ask:
 
-\>What proportion of the permuted differences are as extreme as our observed difference?
+> What proportion of the permuted differences are as extreme as our observed difference?
 
 From our tally, we can compute the **fraction of permutations** where the absolute difference in means is **at least as large as the observed difference** between the real groups.
 
@@ -649,7 +645,7 @@ cat(sprintf("p = %.3f (%.1f%% of %d permutations)",
 
 The **standard error (SE)** reflects how much the mean difference in willingness to pay would **vary by chance** due to random sampling.
 
-In a permutation test, we can estimate this by calculating the **standard deviation of the mean differences** across all 5,000 shuffled datasets. This gives us the **spread of differences we’d expect under the null hypothesis**, showing the typical variation if there were **no real effect**.
+In a permutation test, we can estimate this by calculating the **standard deviation of the mean differences** across all 1,000 shuffled datasets. This gives us the **spread of differences we’d expect under the null hypothesis**, showing the typical variation if there were **no real effect**.
 
 Press **Run Code** to compute the standard error.
 
@@ -669,11 +665,11 @@ cat("Standard Error (SE) (i.e., SD of null distribution):",
 
 ## Step 7: Calculate a test-statistic
 
-\>How many standard errors away from zero is our observed difference between the two real groups?
+> How many standard errors away from zero is our observed difference between the two real groups?
 
-To judge how unusual our observed difference is under the null hypothesis (which assumes **no true difference**), we calculate a **standardized test statistic**:
+To judge how unusual our observed difference is under the null hypothesis, we calculate a **standardized test statistic**:
 
-1.  Take the **observed difference** in willingness to pay between the two groups ($\bar{x}_B - \bar{x}_A$).
+1.  Take the **observed difference** in willingness to pay: $\bar{x}_B - \bar{x}_A$.
 
 2.  Subtract the **null hypothesis value** (0).
 
@@ -701,7 +697,6 @@ cat("Standardized test statistic:",
     "\n")
 
 ```
-
 
 ### Visualize the standardized text statistic alongside the sampling distribution under the null
 
@@ -765,7 +760,7 @@ ggplot(std_mean_diff_permutations, aes(x = std_null_diff)) +
     y = max(density_df$y) * 0.5,
     yend = 0,
     arrow = arrow(length = unit(0.2, "cm"), type = "closed"),
-    color = "#7bc043"
+    color = "#7bc043", alpha = 0.6
   ) +
   geom_label(
     data = label_df,       
@@ -777,7 +772,7 @@ ggplot(std_mean_diff_permutations, aes(x = std_null_diff)) +
     family = "sans",
     size = 4
   ) +
-  xlim(min(density_df$x) - 1, max(density_df$x) + 1) +
+  xlim(min(density_df$x) - 1.25, max(density_df$x) + 1.25) +
   labs(
     title = "Empirical Null Distribution of Condition Differences (Standardized)",
     x = "Standardized null test statistic (difference between conditions / SE)",
@@ -791,11 +786,11 @@ On this graph, the darker gray area of the sampling distribution under the null 
 
 -   If the green line falls **within** the darker grey area, we **cannot reject the null hypothesis** (we lack evidence that the group means differ).
 
--   If the green line is **outside** the darker grey boundaries, we **can reject the null hypothesis** (indicating a significant difference between groups). In this example, such a result would suggest that the data visualization shown to participants affects their perceived willingness to pay.
+-   If the green line is **outside** the darker grey boundaries, we **can reject the null hypothesis** (indicating a significant difference between groups). In this example, such a result would suggest that the data visualization shown to participants affects their willingness to pay.
 
 > Can the null hypothesis be rejected for the comparison of your selected conditions?
 
-## Step 8: Test the hypothesis with an independent samples t-test
+## Step 8: Test the hypothesis with an independent samples *t*-test
 
 To test whether there’s a meaningful difference in means between two groups, we have two primary approaches: a non-parametric approach (e.g., the permutation test we just worked through) and a parametric/theory-based approach.
 
@@ -811,9 +806,9 @@ If these assumptions are reasonable for your data, an independent samples *t*-te
 
 2.  **Estimate the Standard Error**: Using the sample standard deviations and sizes of each group, we estimate the standard error, which tells us how much we’d expect the means to vary just by chance.
 
-3.  **Compute the *t*-statistic**: The *t*-statistic measures how many standard errors the observed difference is from zero (our null hypothesis value, assuming no difference).
+3. **Compute the *t*-statistic**: The *t*-statistic measures how many standard errors the observed difference is from zero (our null hypothesis value, assuming no difference).
 
-The formula for the t-statistic is:
+The formula for the *t*-statistic is:
 
 $$
 t = \frac{(\bar{x}_B - \bar{x}_A) - 0}{SE}
@@ -821,9 +816,20 @@ $$
 
 where:
 
--   $\bar{x}_A$ and $\bar{x}_B$ are the sample means for Groups A and B, respectively. The 0 subtracted in the numerator represents the null hypothesis value (i.e., no group difference).
+- $\bar{x}_A$ and $\bar{x}_B$ are the sample means for Groups A and B, respectively. The 0 in the numerator represents the null hypothesis value (i.e., no group difference).
+- $SE$ is the **pooled standard error** of the difference, calculated from the sample standard deviations and sample sizes of the groups:
 
--   $SE$ is the standard error of the difference, calculated from the sample standard deviations and sample sizes of the groups. $SE = \sqrt{\frac{s_A^2}{n_A} + \frac{s_B^2}{n_B}}$, where:$s_A$ and $s_B$ are the sample standard deviations for Groups A and B, $n_A$ and $n_B$ are the sample sizes for Groups A and B.
+$$
+SE = \sqrt{s_p^2 \left( \frac{1}{n_A} + \frac{1}{n_B} \right)}
+$$
+
+- $s_p^2$ is the **pooled variance**, computed as:
+
+$$
+s_p^2 = \frac{(n_A - 1)s_A^2 + (n_B - 1)s_B^2}{n_A + n_B - 2}
+$$
+
+Here, $s_A$ and $s_B$ are the sample standard deviations for Groups A and B, and $n_A$ and $n_B$ are the sample sizes for each group.
 
 Press **Run Code** on the code chunk below to compute the test.
 
@@ -862,7 +868,7 @@ slr |> tidy(conf.int = TRUE, conf.level = .95)
 
 ```
 
-Notice that the independent sample *t*-test and the simple linear regression produce IDENTICAL results for the difference in willingness to pay between the two groups. A two sample *t*-test and a simple linear regression in which the outcome is regressed on a grouping variable are equivalent models --- you obtain the same result. In the regression output, the intercept gives the estimated mean willingness to pay for Group A, and the coefficient for groupB represents the difference in means (Group B − Group A).
+Notice that the independent sample *t*-test and the simple linear regression produce IDENTICAL results for the difference in willingness to pay between the two groups. An independent samples *t*-test and a simple linear regression in which the outcome is regressed on a grouping variable are equivalent models --- you obtain the same result. In the regression output, the intercept gives the estimated mean willingness to pay for Group A, and the coefficient for groupB represents the difference in means (Group B − Group A).
 
 # Wrap-up
 
@@ -870,13 +876,13 @@ Congratulations --- you’ve now walked through a complete null hypothesis signi
 
 1.  **Explored and visualized** the observed group means with 95% confidence intervals to see how participants’ willingness to pay varied by visualization type.
 
-2.  **Built a null distribution** by shuffling labels 5,000 times, creating “permutation intervals” that show what mean differences look like purely by chance under the null hypothesis.
+2.  **Built a null distribution** by shuffling labels 1,000 times, creating “permutation intervals” that show what mean differences look like purely by chance under the null hypothesis.
 
 3.  **Quantified extremeness** by calculating the proportion of permuted differences at least as large as the observed difference --- your empirical *p*-value.
 
 4.  **Standardized the test statistic** (difference ÷ null SD) to see how many “standard errors” away from zero your result lies.
 
-5.  **Verified your findings** with a parametric two‐sample *t*-test and an equivalent linear regression, confirming that all approaches yield the same conclusion when assumptions hold.
+5.  **Verified your findings** with a parametric independent samples *t*-test and an equivalent linear regression, confirming that all approaches yield the same conclusion when assumptions hold.
 
 ## Key takeaways
 
@@ -890,7 +896,7 @@ Congratulations --- you’ve now walked through a complete null hypothesis signi
 
 -   **Try different comparisons.** Repeat the analysis for other pairs of visualization types (e.g., CI vs. CI_rescaled) and compare effect sizes.
 
--   **Vary the number of permutations.** See how the stability of your *p*-value and null‐distribution estimates changes with 1,000, 10,000, or more replicates.
+-   **Vary the number of permutations.** See how the stability of your *p*-value and null‐distribution estimates changes with fewer (e.g., 500) or more (e.g., 2,000) replicates.
 
 -   **Explore one‐sided tests.** If you have a directional hypothesis (e.g., HOPS will increase willingness to pay), adapt your permutation counting accordingly.
 
