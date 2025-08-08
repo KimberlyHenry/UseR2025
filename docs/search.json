@@ -130,7 +130,7 @@
     "href": "UseR2025_slidedeck.html#the-study",
     "title": "An Interactive webR Approach to Teaching Statistical Inference to Behavioral Science Students",
     "section": "The Study",
-    "text": "The Study\n\n\nThis activity uses data from Hofman et al., shared on the Open Science Framework. The study investigates how different ways of visualizing uncertainty influence decision‑making."
+    "text": "The Study\n\n\nThis activity uses data from Hofman et al., shared on the Open Science Framework. The study investigates how different ways of visualizing uncertainty influence decision‑making."
   },
   {
     "objectID": "UseR2025_slidedeck.html#the-game",
@@ -144,7 +144,7 @@
     "href": "UseR2025_slidedeck.html#special-boulder",
     "title": "An Interactive webR Approach to Teaching Statistical Inference to Behavioral Science Students",
     "section": "Special Boulder",
-    "text": "Special Boulder\n\n\nBut that boulder might help—or it might not."
+    "text": "Special Boulder\n\n\nBut that boulder might help — or it might not."
   },
   {
     "objectID": "UseR2025_slidedeck.html#the-experimental-conditions",
@@ -165,7 +165,7 @@
     "href": "UseR2025_slidedeck.html#shuffle-labels-to-test-the-null",
     "title": "An Interactive webR Approach to Teaching Statistical Inference to Behavioral Science Students",
     "section": "2: Shuffle Labels to Test the Null",
-    "text": "2: Shuffle Labels to Test the Null\n\n\nNext, we randomly reassign group labels 5000 times. The first panel shows the real data; the rest show shuffled labels—letting students watch the null world form step by step."
+    "text": "2: Shuffle Labels to Test the Null\n\n\nNext, we randomly reassign group labels 5000 times. The first panel shows the real data; the rest show shuffled labels — letting students watch the null world form step by step."
   },
   {
     "objectID": "UseR2025_slidedeck.html#build-the-null-distribution",
@@ -186,14 +186,14 @@
     "href": "UseR2025_slidedeck.html#compute-the-standard-error",
     "title": "An Interactive webR Approach to Teaching Statistical Inference to Behavioral Science Students",
     "section": "5: Compute the Standard Error",
-    "text": "5: Compute the Standard Error\n\n\n\nStandard Error (SE) (i.e., SD of null distribution): 5.785 \n\n\n\nThe standard deviation of the null differences is our standard error—it shows the typical variation we’d expect under the null hypothesis."
+    "text": "5: Compute the Standard Error\n\n\n\nStandard Error (SE) (i.e., SD of null distribution): 5.785 \n\n\n\nThe standard deviation of the null differences is our standard error — it shows the typical variation we’d expect under the null hypothesis."
   },
   {
     "objectID": "UseR2025_slidedeck.html#construct-the-test-statistic",
     "href": "UseR2025_slidedeck.html#construct-the-test-statistic",
     "title": "An Interactive webR Approach to Teaching Statistical Inference to Behavioral Science Students",
     "section": "6: Construct the Test Statistic",
-    "text": "6: Construct the Test Statistic\nGroup Difference/SE = Standardized Test Statistic\n\n\nWe standardize the difference using the SE, then plot it on the null curve so students can see how far out it lands."
+    "text": "6: Construct the Test Statistic\nGroup Difference/SE = Standardized Test Statistic\n\n\nWe standardize the observed difference using the SE, then plot it on the null curve so students can see how far out it lands."
   },
   {
     "objectID": "UseR2025_slidedeck.html#compare-to-a-parametric-approach",
@@ -207,6 +207,6 @@
     "href": "UseR2025_slidedeck.html#instructor-benefits",
     "title": "An Interactive webR Approach to Teaching Statistical Inference to Behavioral Science Students",
     "section": "Instructor Benefits",
-    "text": "Instructor Benefits\n\nZero setup: Runs in-browser (webR)\nReusable: GitHub repo for easy adoption\nFlexible: Adaptable to other datasets\n\n🔗 Links: https://KimberlyHenry.github.io/UseR2025/\n\nWebR runs in the browser—no installs. Everything for the activity is on GitHub, ready to use or adapt."
+    "text": "Instructor Benefits\n\nZero setup: Runs in-browser (webR)\nReusable: GitHub repo for easy adoption\nFlexible: Adaptable to other datasets\n\n🔗 Links: https://KimberlyHenry.github.io/UseR2025/\n\nWebR runs in the browser — no installs are necessary. Everything for the activity is on GitHub, ready to use or adapt."
   }
 ]

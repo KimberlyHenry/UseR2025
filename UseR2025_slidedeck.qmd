@@ -55,7 +55,7 @@ I developed an interactive WebR tutorial that guides students step-by-step throu
 ![](images/viz_effects_title.png){fig-align="center"}
 
 ::: notes
-This activity uses data from Hofman et al., shared on the Open Science Framework. The study investigates how different ways of visualizing uncertainty influence decision‑making.
+This activity uses data from Hofman et al., shared on the Open Science Framework. The study investigates how different ways of visualizing uncertainty influence decision‑making.
 :::
 
 ## The Game
@@ -71,7 +71,7 @@ Players competed with Blorg in an ice‑boulder game and could rent a special bo
 ![](images/special_boulder.png){fig-align="center" width="75%"}
 
 ::: notes
-But that boulder might help—or it might not.
+But that boulder might help --- or it might not.
 :::
 
 ## The Experimental Conditions
@@ -262,7 +262,7 @@ ggplot(output_subset, aes(x = shuffled_group, y = wtp_final, color = original_gr
 ```
 
 ::: notes
-Next, we randomly reassign group labels 5000 times. The first panel shows the real data; the rest show shuffled labels—letting students watch the null world form step by step.
+Next, we randomly reassign group labels 5000 times. The first panel shows the real data; the rest show shuffled labels --- letting students watch the null world form step by step.
 :::
 
 ## 3: Build the Null Distribution
@@ -398,7 +398,7 @@ cat("Standard Error (SE) (i.e., SD of null distribution):",
 ```
 
 ::: notes
-The standard deviation of the null differences is our standard error—it shows the typical variation we’d expect under the null hypothesis.
+The standard deviation of the null differences is our standard error --- it shows the typical variation we’d expect under the null hypothesis.
 :::
 
 ## 6: Construct the Test Statistic
@@ -485,7 +485,7 @@ ggplot(std_mean_diff_permutations, aes(x = std_null_diff)) +
 ```
 
 ::: notes
-We standardize the difference using the SE, then plot it on the null curve so students can see how far out it lands.
+We standardize the observed difference using the SE, then plot it on the null curve so students can see how far out it lands.
 :::
 
 ------------------------------------------------------------------------
@@ -517,5 +517,5 @@ Finally, we run a classic t‑test and compare. This side‑by‑side helps stud
 🔗 **Links**: [https://KimberlyHenry.github.io/UseR2025/](https://kimberlyhenry.github.io/UseR2025/){.uri}
 
 ::: notes
-WebR runs in the browser—no installs. Everything for the activity is on GitHub, ready to use or adapt.
+WebR runs in the browser --- no installs are necessary. Everything for the activity is on GitHub, ready to use or adapt.
 :::
