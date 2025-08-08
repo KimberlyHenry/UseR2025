@@ -384,9 +384,9 @@ mean_diff_permutations |>
   ggplot(aes(x = null_diff)) +
   geom_histogram(fill = "#ECECEC", bins = 25) +
   theme_bw() +
-  labs(title = "Sampling distribution for group difference under the null hypothesis",
+  labs(title = "Empirical Null Distribution of Condition Differences",
        y = "Number of shuffled samples",
-       x = "Difference in willingness to pay between groups in the permutation") 
+       x = "Difference in willingness to pay between conditions") 
   
 
 se <- sd(mean_diff_permutations$null_diff)
